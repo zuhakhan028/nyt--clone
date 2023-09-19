@@ -1,0 +1,94 @@
+:root{
+  --primaryGray:86, 123, 149;
+  --secondaryGray:50, 104, 145;
+    --color-background-elevated: hsla(0,0%,100%,1);
+    --color-background-primary: hsla(0,0%,100%,1);
+    --color-background-quaternary: hsla(0,0%,78.04%,1);
+    --color-background-secondary: hsla(0,0%,97.26%,1);
+    --color-background-tertiary: hsla(0,0%,92.16%,1);
+    --color-background-inversePrimary: hsla(0,0%,7.06%,1);
+    --color-background-inverseSecondary: hsla(0,0%,21.18%,1);
+    --color-background-overlay: hsla(0,0%,7.06%,0.58);
+    --color-content-primary: hsla(0,0%,7.06%,1);
+    --color-content-quaternary: hsla(0,0%,44.71%,1);
+    --color-content-quintary: hsla(0,0%,54.51%,1);
+    --color-content-secondary: hsla(0,0%,21.18%,1);
+    --color-content-tertiary: hsla(0,0%,35.3%,1);
+    --color-content-inversePrimary: hsla(0,0%,100%,1);
+    --color-overlay-black: hsla(0,0%,0%,1);
+    --color-signal-accent: hsla(215.28,72.23%,50.59%,1);
+    --color-signal-breaking: hsla(352.72,98.1%,41.18%,1);
+    --color-signal-developing: hsla(20.19,91.67%,47.06%,1);
+    --color-signal-editorial: hsla(205.9,48.72%,38.24%,1);
+    --color-signal-highlight: hsla(54.67,95.75%,90.79%,1);
+    --color-signal-negative: hsla(354.29,98.83%,33.34%,1);
+    --color-signal-positive: hsla(126.98,53.09%,31.77%,1);
+    --color-stroke-primary: hsla(0,0%,7.06%,1);
+    --color-stroke-quaternary: hsla(0,0%,87.46%,1);
+    --color-stroke-secondary: hsla(0,0%,54.51%,1);
+    --color-stroke-tertiary: hsla(0,0%,78.04%,1);
+    --color-stroke-inversePrimary: hsla(0,0%,100%,1);
+    --color-static-white: hsla(0,0%,100%,1);
+    --color-static-gray100: hsla(0,0%,0%,1);
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,'Libre-Franklin', 'Lexend','Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+h3{
+  padding: 0;
+  margin: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas,'Libre-Franklin','Lexend', 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "KarnakFont";
+  src: url("./assets/fonts/KARNAKPRO-BLACK.OTF");
+} 
+
+@font-face {
+  font-family: "cheltenham-italic-light";
+  src: url("assets/fonts/CHELTENHAMSTDLIGHTITALIC.OTF");
+}
+
+@font-face{
+  font-family: "cheltanham-std";
+  src:url("assets/fonts/CHELTENHAMSTDBOOK.OTF")
+}
+
+@font-face{
+  font-family: "cheltanham-italic";
+  src:url("assets/fonts/CHELTENHAMSTDLIGHTITALIC.OTF")
+}
+
+
+@font-face {
+  font-family: "custom-georgia-regular";
+  src: url("assets/fonts/GEORGIA.TTF");
+}
+
+@font-face {
+  font-family: "custom-times-new-roman-regular";
+  src: url("./assets/fonts/TIMES.TTF");
+}
+@font-face {
+  font-family: "custom-times-new-roman-bold";
+  src: url("./assets/fonts/TIMESBD.TTF");
+}
+@font-face {
+  font-family: "franklin-regular";
+  src: url("./assets/fonts/FRADM.TTF");
+}
+
+@font-face {
+  font-family: "franklin-regular-gothic";
+  src: url("./assets/fonts/FRABK.TTF");
+}

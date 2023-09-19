@@ -1,0 +1,36 @@
+.App{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 99.9%;
+
+
+}
+.inner-app-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.middle-section{
+  width: 1200px;
+margin-top: 45px;
+
+}
+
+@media screen and (max-width:1280px) {
+  .middle-section{
+    width: 95%;
+  }
+  .header-right-section{
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width:1000px){
+.App{
+  overflow-y: hidden;
+}
+}

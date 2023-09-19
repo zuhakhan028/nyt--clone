@@ -1,0 +1,34 @@
+.middle-section-each-country{
+    width: 1200px;
+ 
+}
+.news-section-h1-each-country{
+    margin: 6px 0;
+    font-family: 'KarnakFont','Noto Serif Georgian', serif;
+    font-size: 44px;
+    letter-spacing: 1px;
+   
+}
+.news-section-each-country{
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-left: 0px;
+    padding-top: 8px;
+    margin-top: 15px;
+}
+.loading-country-news-div{
+    font-size: 26px;
+    font-weight: 600;
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen  and (max-width:1000px){
+    .middle-section-each-country{
+        width: 900px;
+    }
+}

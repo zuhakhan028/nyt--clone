@@ -1,0 +1,25 @@
+.headlines {
+    font-size: 44px;
+    font-family: 'KarnakFont', 'Noto Serif Georgian', serif;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    line-height: 1; 
+    box-sizing: content-box; 
+}
+
+.countries-list {
+    display: flex;
+    font-size: 11px;
+    padding: 9px 0px 7px;
+    border-top: 1px solid hsla(0, 0%, 87.46%, 1);
+    border-bottom: 2px solid black;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.countries-navbar{
+    margin-top: 10px;
+}

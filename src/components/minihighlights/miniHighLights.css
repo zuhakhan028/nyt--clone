@@ -1,0 +1,144 @@
+.mini-highlight-div{
+    display: flex;
+    flex-direction: row;
+    padding-top: 29px;
+    margin-top: 30px;
+    padding-bottom: 0;
+    border-top: 1px solid var(--color-stroke-quaternary);
+    font-family: 'EB Garamond', serif;
+ 
+}
+
+
+
+.mini-highlight-list{
+    display: flex;
+    flex-direction: row;  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+    
+   
+}
+.mini-highlight-img{
+width:207px;
+height: 137px;
+float: none;
+transform: translateY(-7px);
+margin-right: 0;
+object-fit: contain;
+
+
+}
+.mini-highlight-title{
+    font-size: 15.5px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 0 0 5px 0;
+    font-family: "cheltanham-std";
+  
+}
+.mini-highlight-inner-div{
+    width: 200px; 
+    padding: 0 27px 0 20px;
+    border-right:  1px solid var(--color-stroke-quaternary);
+   
+}
+
+
+.highlight-li-inner-div{
+   bottom: 10px;
+   width: 207px;
+}
+
+.mini-highlight-figure{
+    float: none;
+    width: 207px;
+    margin-left: 0;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+.mini-highlight-inner-div:hover p {
+    text-decoration: underline;
+}
+.mini-highlight-title{
+    margin-top: 0;
+}
+
+
+
+@media screen and (max-width:1250px) {
+.mini-highlight-img{
+    width: 182px;
+    height: 120px;
+}
+    
+.mini-highlight-inner-div{
+    padding:0px 15px;
+    width: 192px;
+}
+
+.mini-highlight-div{
+   justify-content: center;
+
+}
+
+
+       
+    }
+
+
+    @media screen and (max-width:1000px){
+
+        .mini-highlight-div{
+          justify-content: center;
+        }
+
+        .mini-highlight-img{
+            width:150px;
+            height: 99px;
+            float: none;
+            transform: translateY(-7px);
+            margin-right: 0;
+            object-fit: contain;
+            
+            
+            }
+
+            .mini-highlight-figure{
+                float: none;
+                width: 150px;
+                margin-left: 0;
+                margin-bottom: 8px;
+                margin-top: 0;
+               font-size: 14px;
+            }
+
+            .mini-highlight-inner-div{
+                width: 150px; 
+                padding: 0 10px 0 10px;
+                border-right:  1px solid var(--color-stroke-quaternary);
+               
+            }
+
+            .highlight-li-inner-div{
+                bottom: 10px;
+                width: 150px;
+                
+              
+             }
+
+             .first-item{
+                width: 160px;
+                align-items: left; 
+                padding-left: 0;
+                padding-right: 20px;
+            }
+
+            .last-item{
+                border-right: none;
+            }
+    
+    }

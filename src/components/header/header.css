@@ -1,0 +1,270 @@
+.header {
+    padding: 0 45px 0 45px;
+    margin: 0px 110px 0px 110px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+.outer-header-div{
+    border-bottom: 1px solid rgba(226, 226, 226);
+}
+.inner-header-div {
+    width: 1200px;
+    padding: 4px 5px 2px 5px;
+    display: flex;
+}
+
+.header-left-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons-div {
+    padding: 8px 9px 9px 9px;
+    margin-right: 8px;
+}
+
+.hamburger-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+ 
+}
+
+.news-section {
+    font-size: 14.25px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-left: 20px;
+    padding-top: 8px;
+}
+
+
+
+.header-right-section {
+    display: flex;
+    margin-left: 19%;
+}
+
+.header-middle-section {
+    width: 51.1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo-icon {
+    width: 195px;
+    height: 26.4px;
+    margin-top: 8px;
+}
+
+.logo-div {
+    display: flex;
+}
+
+.subscription-button {
+    /* width: 155px; */
+    height: 11px;
+    background-color: rgb(var(--primaryGray));
+    border: 1px solid rgb(var(--secondaryGray));
+    font-size: 11px;
+    font-weight: 700;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.6s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    margin-right: 20px;
+    margin-top: 1px;
+    line-height: 11px;
+    
+}
+
+.account-div {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 9px;
+    display: flex;
+    color: rgba(18, 18, 18, 0.65);
+}
+
+.profile-icon-img{
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+
+.drop_down_icon {
+    width: 9px;
+    height: 5px;
+    margin-left: 6px;
+    margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1280px) {
+    .header{
+      margin: 0;
+      padding: 0px 20px;
+      display: flex;
+        
+    }
+    
+   
+}
+
+@media screen and (max-width:1244px) {
+   
+    .header-middle-section{
+        width: 40%;
+    }
+    .header-right-section{
+        margin-left:10%
+    }
+    .inner-header-div{
+        justify-content: space-around;
+        width:100vw;
+    }
+   
+}
+
+@media screen and (max-width:1150px) {
+   .header{
+    padding: 0px 5px;
+   }
+    
+   .header-middle-section{
+    width: 35%;
+}
+.header-right-section{
+    margin-left:0px
+}
+   
+}
+
+@media screen and (max-width:1000px){
+    .header{
+        width: 97vw;
+    }
+   
+    .search-icon {
+        display: none;
+    } 
+
+    .subscription-button{
+        display: none;
+    }
+
+    .news-section{
+        display: none;
+    }
+   
+
+    .inner-header-div {
+       display: flex;
+       width: 96vw;
+       justify-content: left;
+       padding: 20px;
+       
+    }
+
+    .header-left-section{
+        margin-right: 30%;
+    }
+    .logo-icon {
+        width: 225px;
+        height: 30px;
+        margin-top: 8px;
+     
+      
+    }
+    .profile-icon-img{
+       width: 24px;
+       height: 24px;
+       display: inline-block;
+       margin-top: 10px;
+       cursor: pointer;
+   
+       
+    }
+
+    .account-div{
+        display: none;
+    }
+   
+    .header-middle-section{
+        margin-right: 250px;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .header{
+        width: 97vw;
+    }
+   
+    .search-icon {
+        display: none;
+    } 
+
+    .subscription-button{
+        display: none;
+    }
+
+    .news-section{
+        display: none;
+    }
+   
+
+    .inner-header-div {
+       display: flex;
+       width: 96vw;
+       justify-content: left;
+       padding: 20px;
+       
+    }
+
+    .header-left-section{
+        margin-right: 25%;
+    }
+    .logo-icon {
+        width: 225px;
+        height: 30px;
+        margin-top: 8px;
+     
+      
+    }
+    .profile-icon-img{
+       width: 24px;
+       height: 24px;
+       display: inline-block;
+       margin-top: 10px;
+       cursor: pointer;
+   
+       
+    }
+
+    .account-div{
+        display: none;
+    }
+   
+    .header-middle-section{
+        margin-right: 180px;
+    }
+    
+}
