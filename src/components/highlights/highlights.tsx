@@ -167,7 +167,7 @@ function Highlights(props: highlightsData) {
                                         <figure className="fig-div">
                                             <div>
                                                 <LazyLoadImage
-                                                    src={consecutiveHeadlines[3].multimedia[1].url}
+                                                    src={`https://img.gs/pvftqstccr/${consecutiveHeadlines[3].multimedia[1].url}`}
                                                     className={`headline-1-img`}
                                                     alt={consecutiveHeadlines[3].multimedia[0].caption}
                                                     placeholderSrc={place_holder_img}
@@ -215,7 +215,7 @@ function Highlights(props: highlightsData) {
                                         <figure className="fig-div">
                                             <div>
                                                 <LazyLoadImage
-                                                    src={consecutiveHeadlines[2].multimedia[1].url}
+                                                    src={`https://img.gs/pvftqstccr/${consecutiveHeadlines[2].multimedia[1].url}`}
                                                     className={`headline-1-img`}
                                                     alt={consecutiveHeadlines[2].multimedia[0].caption}
                                                     placeholderSrc={place_holder_img}
