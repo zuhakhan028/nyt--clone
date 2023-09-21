@@ -8,7 +8,9 @@
     background-color: #fff;
     transition: left 0.3s ease-in-out;
     z-index: 100;
-    border-top-right-radius: 10px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 
   }
   
@@ -31,7 +33,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    line-height: 28px;
+    line-height: 29px;
  
   }
 
@@ -47,6 +49,7 @@
     align-items: center;
     border-radius: 3px;
     padding-left: 2px;
+    opacity: 0.2px;
   }
 
   .each-menu-section-li:hover{
@@ -63,7 +66,14 @@
     
   }
 
-  .forward_arrow{
+  .forward-arrow{
     width: 10px;
     height: 10px;
+    opacity: 0.2;
+  }
+
+  .side-bar-home-page{
+    margin-left: 2px;
+    text-decoration: none;
+    line-height: 29px;
   }

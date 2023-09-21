@@ -15,12 +15,12 @@
     margin-left: 0px;
     padding-top: 8px;
     margin-top: 15px;
-    font-family:"Noto Serif Georgian"
+    font-family:"Noto Serif Georgian",'Libre-Franklin',serif;
 }
 
 .news-section-h1{
     margin: 10px 0;
-    font-family: 'KarnakFont','Noto Serif Georgian', serif;
+    font-family: 'KarnakFont','Noto Serif Georgian', 'Libre-Franklin',serif;
     font-size: 36px;
    
 }
@@ -47,7 +47,7 @@
     letter-spacing: 0.17px;
     font-size: 17px;
     font-weight: 400;
-    font-family: "Noto Serif Georgian";
+    font-family: "cheltanham-std",'Libre-Franklin',serif;
     margin-top: 14px;
     margin-bottom: 0;
 
@@ -59,4 +59,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media screen and (max-width:700px) {
+  
 }

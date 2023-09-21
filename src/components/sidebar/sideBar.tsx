@@ -12,7 +12,7 @@ function SideBar(props: sideBar) {
 
         <div className={`sidebar ${props.isOpen ? "open" : ""}`} onMouseLeave={props.onClose}>
             <div className="sidebar-content">
-                Home Page
+               <a className="side-bar-home-page"> Home Page</a>
            {
             sidebarSections.map((value,index)=>{
                 return(
@@ -22,7 +22,7 @@ function SideBar(props: sideBar) {
                             <ul className="each-menu-section-ul">
                               <li className="each-menu-section-li">
                                 {value}
-                                <img src={forward_icon}className="forward_arrow" alt="forward_arrow"></img>
+                                <img src={forward_icon} className="forward-arrow" alt="forward_arrow"></img>
                               </li>
                             </ul>
                         )

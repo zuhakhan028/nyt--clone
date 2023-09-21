@@ -4,7 +4,7 @@
 }
 .news-section-h1-each-country{
     margin: 6px 0;
-    font-family: 'KarnakFont','Noto Serif Georgian', serif;
+    font-family: 'KarnakFont','Noto Serif Georgian', 'Libre-Franklin',serif;
     font-size: 44px;
     letter-spacing: 1px;
    
@@ -31,4 +31,13 @@
     .middle-section-each-country{
         width: 900px;
     }
+}
+
+
+@media screen  and (max-width:700px){
+    .middle-section-each-country{
+        width: 650px;
+    }
+
+   
 }

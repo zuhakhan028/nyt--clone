@@ -34,3 +34,10 @@ margin-top: 45px;
   overflow-y: hidden;
 }
 }
+
+
+@media screen and (max-width:700px){
+  .inner-app-div{
+    width: 670px;
+  }
+}

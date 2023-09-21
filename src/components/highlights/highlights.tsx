@@ -90,9 +90,9 @@ function Highlights(props: highlightsData) {
                                                 </p>
                                                 <p className={`time-ago`}>
                                                     <span className="byline-span">
-                                                    {`${getTimeAgo(result.created_date)} .`}
+                                                        {`${getTimeAgo(result.created_date)} .`}
                                                     </span>
-                                                
+
                                                     <span
                                                         className={`byline-span-author`}
                                                     >
@@ -125,7 +125,7 @@ function Highlights(props: highlightsData) {
                                             </h3>
                                             <div className="highlights-right-div">
                                                 <span>
-                                                    <figure className="fig-div">
+                                                    <figure className="highlights-right-div-fig">
                                                         <div>
                                                             <LazyLoadImage
                                                                 src={consecutiveHeadlines[3].multimedia[1].url}
@@ -157,6 +157,101 @@ function Highlights(props: highlightsData) {
                                 </Link>
                             </div>
 
+                            <div key={consecutiveHeadlines[3].title} className={`headline-3-li-700`}>
+                                <Link
+                                    to={`/article/${consecutiveHeadlines[3].byline}`}
+                                    className="route-next-page"
+                                    state={consecutiveHeadlines[3]}
+                                >
+                                    <article className="highlight-article">
+                                        <figure className="fig-div">
+                                            <div>
+                                                <LazyLoadImage
+                                                    src={consecutiveHeadlines[3].multimedia[1].url}
+                                                    className={`headline-1-img`}
+                                                    alt={consecutiveHeadlines[3].multimedia[0].caption}
+                                                    placeholderSrc={place_holder_img}
+                                                />
+                                            </div>
+                                            <figcaption className="fig-caption">
+                                                <span >
+                                                    {consecutiveHeadlines[3].multimedia[0].copyright.toUpperCase()}
+                                                </span>
+                                            </figcaption>
+                                        </figure>
+                                        <div>
+                                            <h3 className={`hightlights-title`}>
+                                                {consecutiveHeadlines[3].title}
+                                            </h3>
+                                            <p className={`highlight-abstract`}>
+                                                {consecutiveHeadlines[3].abstract}
+                                            </p>
+                                            <p className={`time-ago`}>
+                                                <span className="byline-span">
+                                                    {`${getTimeAgo(consecutiveHeadlines[3].created_date)} .`}
+                                                </span>
+
+                                                <span
+                                                    className={`byline-span-author`}
+                                                >
+                                                    {formatNames(consecutiveHeadlines[3].byline)
+                                                        ? formatNames(consecutiveHeadlines[3].byline)
+                                                        : "By NEW YORK TIMES"}
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </article>
+                                </Link>
+                            </div>
+
+
+                            <div key={consecutiveHeadlines[2].title} className={`headline-3-li-700`}>
+                                <Link
+                                    to={`/article/${consecutiveHeadlines[2].byline}`}
+                                    className="route-next-page"
+                                    state={consecutiveHeadlines[2]}
+                                >
+                                    <article className="highlight-article">
+                                        <figure className="fig-div">
+                                            <div>
+                                                <LazyLoadImage
+                                                    src={consecutiveHeadlines[2].multimedia[1].url}
+                                                    className={`headline-1-img`}
+                                                    alt={consecutiveHeadlines[2].multimedia[0].caption}
+                                                    placeholderSrc={place_holder_img}
+                                                />
+                                            </div>
+                                            <figcaption className="fig-caption">
+                                                <span >
+                                                    {consecutiveHeadlines[2].multimedia[0].copyright.toUpperCase()}
+                                                </span>
+                                            </figcaption>
+                                        </figure>
+                                        <div>
+                                            <h3 className={`hightlights-title`}>
+                                                {consecutiveHeadlines[2].title}
+                                            </h3>
+                                            <p className={`highlight-abstract`}>
+                                                {consecutiveHeadlines[2].abstract}
+                                            </p>
+                                            <p className={`time-ago`}>
+                                                <span className="byline-span">
+                                                    {`${getTimeAgo(consecutiveHeadlines[2].created_date)} .`}
+                                                </span>
+
+                                                <span
+                                                    className={`byline-span-author`}
+                                                >
+                                                    {formatNames(consecutiveHeadlines[2].byline)
+                                                        ? formatNames(consecutiveHeadlines[2].byline)
+                                                        : "By NEW YORK TIMES"}
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </article>
+                                </Link>
+                            </div>
+
 
 
                             <div className="highlight-right-bottom-div">
@@ -173,7 +268,7 @@ function Highlights(props: highlightsData) {
                                             </h3>
                                             <div className="highlights-right-div">
                                                 <span>
-                                                    <figure className="fig-div">
+                                                    <figure className="highlights-right-div-fig">
                                                         <div>
                                                             <LazyLoadImage
                                                                 src={consecutiveHeadlines[2].multimedia[1].url}

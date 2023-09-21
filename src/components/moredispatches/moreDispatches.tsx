@@ -64,10 +64,10 @@ function MoreDispatches(props:MoreDispatches){
                         </div>
                         
                         <LatestSections worldnews={worldNewsResult}/>
-                        
+                        <Footer/>
     
                     </section>
-             <Footer/>
+            
                 </div>
             </div>
         )

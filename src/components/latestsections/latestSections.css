@@ -1,6 +1,7 @@
 .latest-section{
    margin-top: 35px;
 border-bottom:2px solid var(--color-stroke-quaternary,#DFDFDF) ;
+
 }
 
 .latest-section-ul{
@@ -9,6 +10,8 @@ border-bottom:2px solid var(--color-stroke-quaternary,#DFDFDF) ;
     border-bottom:1px solid var(--color-stroke-quaternary,#DFDFDF);
     border-top:2px solid black;
     display: flex;
+    font-family: "franklin-regular",'Libre-Franklin',serif;
+    cursor: pointer;
 }
 
 .latest-section-li{
@@ -20,6 +23,7 @@ border-bottom:2px solid var(--color-stroke-quaternary,#DFDFDF) ;
     margin-left:0;
     position: relative;
     height: 40px;
+    width: 136px;
   
 
 }
@@ -45,9 +49,10 @@ border-bottom:2px solid var(--color-stroke-quaternary,#DFDFDF) ;
 
 .latest-section-clicked{
     display: flex;
+ 
     align-items: center;
     justify-content: center;
-   min-width:160px;
+   min-width:136px;
    background-color: white;
    border: 1px solid var(--color-stroke-quaternary,#DFDFDF);
    border-bottom: 1px solid white;
@@ -55,11 +60,12 @@ border-bottom:2px solid var(--color-stroke-quaternary,#DFDFDF) ;
    border-top-right-radius: 3px;
    transform: translateY(-10px);
    height: 51px;
-   text-align: center;
+ 
    font-size:17px;
    font-weight: 700;
-   color: var(--color-stroke-quaternary,#DFDFDF);
+   color: black;
    position: absolute;
+
 
 }
 
@@ -67,7 +73,7 @@ border-bottom:2px solid var(--color-stroke-quaternary,#DFDFDF) ;
    display: flex;
   align-items: center;
   justify-content: center;
-   min-width:160px;
+   min-width:136px;
    background-color: white;
    border: 1px solid var(--color-stroke-quaternary,#DFDFDF);
    border-bottom: 1px solid white;
@@ -86,8 +92,8 @@ border-bottom:2px solid var(--color-stroke-quaternary,#DFDFDF) ;
 .search-icon-latest-section{
     height: 16px;
     width: 16px;
-    margin-right: 7px;
     opacity: 0.40;
+    padding-right: 7px;
 }
 
 

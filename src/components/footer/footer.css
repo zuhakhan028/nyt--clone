@@ -63,6 +63,8 @@
     font-size: 13px;
     font-weight: 700;
     margin-top: 0;
+    margin-bottom: 0px;
+    line-height: 20px;
    
 }
 
@@ -83,6 +85,7 @@
     list-style: none;
     display: flex;
     margin-bottom: 5px;
+
 }
 
 .footer-right-section{
@@ -166,4 +169,11 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
+}
+
+
+@media screen and (max-width:700px){
+    .footer-subcategory-link{
+        font-size: 12px;
+    }
 }

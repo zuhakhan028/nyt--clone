@@ -1,5 +1,4 @@
 import React from "react";
-import "./CountryArticle.css";
 import Header from "../header/header";
 import { useLocation } from "react-router-dom";
 import Footer from "../footer/footer";

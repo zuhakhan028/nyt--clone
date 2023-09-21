@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadLines from './components/middle-section/headlines';
+import HeadLines from './components/headlines/headlines';
 import Footer from './components/footer/footer';
 import './App.css';
 import Header from './components/header/header';

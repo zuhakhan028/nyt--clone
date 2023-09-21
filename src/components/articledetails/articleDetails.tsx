@@ -28,7 +28,7 @@ function ArticleDetail() {
     const location = useLocation();
     const worldnews = location.state ? (location.state.item ? location.state.item : location.state) : null;    
     document.title = worldnews.title
-   
+   console.log(worldnews)
 const metaDescription = document.querySelector('meta[name="news"]');
 
 
