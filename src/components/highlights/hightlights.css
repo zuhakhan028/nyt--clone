@@ -62,9 +62,9 @@
 
 .highlight-abstract {
     margin-top: 7px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 100;
-    font-family: 'Noto Serif Georgian', serif;
+    font-family: 'custom-georgia-regular', serif;
     margin-bottom: 0;
     line-height: 22px
 }
@@ -75,6 +75,18 @@
     border-right:1px solid var(--color-stroke-quaternary)
 }
 
+.byline-dot{
+    background-color: var(--color-content-quaternary, #727272);
+    border-radius: 1px; 
+    width: 3px; 
+    height: 3px; 
+    display: inline-block;
+    margin: 7px 4px 2px 4px; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 .headline-2-img{
     width: 306px;
@@ -130,6 +142,7 @@ text-align: right;
     margin-top: 5px;
     font-size: 11px;
     color:var(--color-content-quaternary,#727272);  
+   
 }
 
 .byline-span{

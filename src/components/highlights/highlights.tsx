@@ -90,9 +90,10 @@ function Highlights(props: highlightsData) {
                                                 </p>
                                                 <p className={`time-ago`}>
                                                     <span className="byline-span">
-                                                        {`${getTimeAgo(result.created_date)} .`}
+                                                        {`${getTimeAgo(result.created_date)} `}
+                                                      
                                                     </span>
-
+                                                    <span className="byline-dot">  </span>
                                                     <span
                                                         className={`byline-span-author`}
                                                     >
@@ -146,7 +147,8 @@ function Highlights(props: highlightsData) {
                                                 {consecutiveHeadlines[3].abstract}
                                             </p>
                                             <p className="time-ago-right-div">
-                                                <span className="byline-span">{`${getTimeAgo(consecutiveHeadlines[3].created_date)} .`} </span>
+                                                <span className="byline-span">{`${getTimeAgo(consecutiveHeadlines[3].created_date)}`} </span>
+                                                <span className="byline-dot">  </span>
                                                 <span className="byline-span-author">
                                                     {formatNames(consecutiveHeadlines[3].byline)}
                                                 </span>
@@ -167,7 +169,7 @@ function Highlights(props: highlightsData) {
                                         <figure className="fig-div">
                                             <div>
                                                 <LazyLoadImage
-                                                    src={`https://img.gs/pvftqstccr/${consecutiveHeadlines[3].multimedia[1].url}`}
+                                                    src={consecutiveHeadlines[3].multimedia[1].url}
                                                     className={`headline-1-img`}
                                                     alt={consecutiveHeadlines[3].multimedia[0].caption}
                                                     placeholderSrc={place_holder_img}
@@ -215,7 +217,7 @@ function Highlights(props: highlightsData) {
                                         <figure className="fig-div">
                                             <div>
                                                 <LazyLoadImage
-                                                    src={`https://img.gs/pvftqstccr/${consecutiveHeadlines[2].multimedia[1].url}`}
+                                                    src={consecutiveHeadlines[2].multimedia[1].url}
                                                     className={`headline-1-img`}
                                                     alt={consecutiveHeadlines[2].multimedia[0].caption}
                                                     placeholderSrc={place_holder_img}
@@ -236,9 +238,9 @@ function Highlights(props: highlightsData) {
                                             </p>
                                             <p className={`time-ago`}>
                                                 <span className="byline-span">
-                                                    {`${getTimeAgo(consecutiveHeadlines[2].created_date)} .`}
+                                                    {`${getTimeAgo(consecutiveHeadlines[2].created_date)}`}
                                                 </span>
-
+                                                <span className="byline-dot">  </span>
                                                 <span
                                                     className={`byline-span-author`}
                                                 >
@@ -291,7 +293,8 @@ function Highlights(props: highlightsData) {
                                                     : consecutiveHeadlines[2].abstract}
                                             </p>
                                             <p className="time-ago-right-div">
-                                                <span className="byline-span">{`${getTimeAgo(consecutiveHeadlines[2].created_date)} .`} </span>
+                                                <span className="byline-span">{`${getTimeAgo(consecutiveHeadlines[2].created_date)}`}  </span>
+                                                <span className="byline-dot">  </span>
                                                 <span className="byline-span-author">
                                                     {formatNames(consecutiveHeadlines[2].byline)}
                                                 </span>

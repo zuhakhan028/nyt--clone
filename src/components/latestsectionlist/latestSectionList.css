@@ -1,54 +1,55 @@
-.latest-section-list-section{
+.latest-section-list-section {
     padding-top: 20px;
-   
-    
-   
+
+
+
 }
-.last-list-item{
+
+.last-list-item {
     border-bottom: 0;
     display: flex;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
 
-.last-list-item:hover h3{
+.last-list-item:hover h3 {
     text-decoration: underline;
-    }
-  
-.latest-section-list:hover h3{
-text-decoration: underline;
 }
 
-.latest-section-left-div{
+.latest-section-list:hover h3 {
+    text-decoration: underline;
+}
+
+.latest-section-left-div {
     max-width: 70%;
-    
+
 }
 
-.latest-section-ordered-list{
+.latest-section-ordered-list {
     list-style: none;
 }
 
-.latest-section-ordered-list{
+.latest-section-ordered-list {
     list-style: none;
     padding-left: 0;
 }
 
-.latest-section-list{
+.latest-section-list {
     display: flex;
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--color-stroke-quaternary,#DFDFDF);
+    border-bottom: 1px solid var(--color-stroke-quaternary, #DFDFDF);
     padding-bottom: 20px;
 
 }
 
-.latest-list-section-figure{
+.latest-list-section-figure {
     margin: 0;
     margin-left: 40px;
     display: inline-block;
     margin-left: 40px;
 }
 
-.latest-list-section-img{
+.latest-list-section-img {
     width: 205px;
     height: 136px;
     object-fit: contain;
@@ -56,59 +57,60 @@ text-decoration: underline;
 
 
 
-.article-latest-section-list{
+.article-latest-section-list {
     display: flex;
     padding-left: 60px;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.article-latest-section-inner-div{
-   min-width: 478px;
-  
+.article-latest-section-inner-div {
+    min-width: 478px;
+
 }
-.formatted-date{
+
+.formatted-date {
     white-space: nowrap;
     font-size: 11px;
-    color:var(--color-content-quaternary,#727272);
-    margin-top:10px;
+    color: var(--color-content-quaternary, #727272);
+    margin-top: 10px;
     font-weight: 400;
 }
 
-.latest-list-section-abstract{
+.latest-list-section-abstract {
     font-size: 17px;
     margin-top: 5px;
-    font-family: 'EB Garamond', 'Libre-Franklin',serif;
+    font-family: 'EB Garamond', 'Libre-Franklin', serif;
     margin-bottom: 11px;
     line-height: 18px;
 }
 
-.dispatch-title-h3{
-    font-family: "cheltanham-std",'Libre-Franklin',serif;
+.dispatch-title-h3 {
+    font-family: "cheltanham-std", 'Libre-Franklin', serif;
     font-size: 23px;
     font-weight: 400;
-   
+
 
 }
 
 
-.results-fetched-div{
+.results-fetched-div {
     font-size: 18px;
     line-height: 22px;
     padding-bottom: 20px;
-    border-bottom:  1px solid var(--color-stroke-quaternary, #DFDFDF);
+    border-bottom: 1px solid var(--color-stroke-quaternary, #DFDFDF);
     display: block;
     padding-top: 15px;
 }
 
-.select-search-div{
+.select-search-div {
     border: none;
     font-size: 18px;
     line-height: 22px;
     outline: none;
 }
 
-.latest-news-loading-div{
+.latest-news-loading-div {
     color: black;
     display: block;
     width: 100%;
@@ -119,17 +121,48 @@ text-decoration: underline;
     font-size: 20px;
 }
 
+.pagination-more-not-clicked {
+    width: 600px;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
 
-@media screen and (max-width:700px){
-  
+}
 
-    .latest-list-section-img{
+.pagination-more-not-clicked:hover {
+    color: black;
+}
+
+.pagination-more-clicked {
+    display: none;
+}
+
+.more-icon {
+    width: 12px;
+    height: 12px;
+    padding-left: 10px;
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width:700px) {
+
+
+    .latest-list-section-img {
         width: 150px;
         height: 100px;
         object-fit: contain;
     }
+
     .dispatch-title-h3 {
-        font-family: "cheltanham-std",'Libre-Franklin',serif;
+        font-family: "cheltanham-std", 'Libre-Franklin', serif;
         font-size: 16px;
         font-weight: 400;
     }
@@ -138,8 +171,8 @@ text-decoration: underline;
         min-width: 310px;
     }
 
-   .latest-section-left-div {
-    max-width: 100%;
-}
- 
+    .latest-section-left-div {
+        max-width: 100%;
+    }
+
 }

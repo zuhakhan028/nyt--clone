@@ -37,14 +37,13 @@ function Dispatches(props: dispatches): any {
               {props.heading}
             </div>
             <Link to={`${props.heading}`} className="more-in-dispatches">
-              {props.anchorText} <small>{">"}</small><span><img alt="" /></span>
+              {props.anchorText} <span>{">"}</span><span></span>
             </Link>
           </header>
           <ol className="dispatch-list">
             {slicedResults.map((item, index) => (
-              <div>
-                <li
-                   key={index+1}
+              <li key={index}>
+                <div               
                   className={`dispatch-inner-div ${index === 0 ? "first-item-dispatches" : ""} ${index === slicedResults.length - 1 ? " last-item-dispatches" : ""}`}
                 >
                   <Link className="route-next-page"
@@ -71,9 +70,12 @@ function Dispatches(props: dispatches): any {
                       <p className="dispatch-title">{item.title}</p>
                     </div>
                   </Link>
-                </li>
-                <li
-                  key={index}
+                </div>
+
+
+
+                <div
+                  key={index+1}
                   className={`dispatch-inner-div-700 ${index === 0 ? "first-item-dispatches" : ""} ${index === slicedResults.length - 1 ? " last-item-dispatches" : ""}`}
                 >
                   <Link className="route-next-page"
@@ -123,9 +125,9 @@ function Dispatches(props: dispatches): any {
                       </figure>
                     </div>
                   </Link>
-                </li>
+                </div>
 
-              </div>
+              </li>
 
             ))}
           </ol>

@@ -10,7 +10,7 @@ export function getTimeAgo(dateString:string) {
       return `${hoursAgo}hr ago`;
     } else {
       const daysAgo = Math.floor(timeDifference / 1440);
-      return `${daysAgo}day ago`;
+      return `${daysAgo} day ago`;
     }
   }
   

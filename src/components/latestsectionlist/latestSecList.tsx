@@ -6,19 +6,25 @@ import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { formatNames } from "../formatNames";
 import place_holder_img from "../../assets/images/placeholder-image.png"
+import {useState} from "react"
+import Pagination from "../pagination";
+import more_icon from "../../assets/images/more.svg"
 interface LatestSectionListProps {
   index: number;
   worldnews: worldNewsModule | undefined;
 }
 
 function LatestSectionList(props: LatestSectionListProps) {
-
-
+  
+  const[paginationMoreClicked,SetpaginationMoreClicked]=useState(false)
   if (props.index === 1) {
     if(props.worldnews){
-      console.log(props.worldnews)
       const numResults = props.worldnews.num_results;
-      console.log(numResults)
+      const paginationchunk1 = props.worldnews.results.slice(0, props.worldnews.results.length / 2);
+      const paginationchunk2 = props.worldnews.results.slice(props.worldnews.results.length / 2, props.worldnews.results.length);
+      
+   
+
       return (
         <section>
           <label className="results-fetched-div">{` ${numResults} results sorted by `}  
@@ -31,7 +37,7 @@ function LatestSectionList(props: LatestSectionListProps) {
         <section className="latest-section-list-section">
           <div className="latest-section-left-div">
             <ol className="latest-section-ordered-list">
-              {props.worldnews.results.map((item, index) => {
+              {paginationchunk1.map((item, index) => {
                 if (item.title) {
                   const isLastItem = index === numResults - 1;
                   return (
@@ -85,8 +91,18 @@ function LatestSectionList(props: LatestSectionListProps) {
                   return null; 
                 }
               })}
+                       <div onClick={()=>{SetpaginationMoreClicked(true)}} className={paginationMoreClicked?"pagination-more-clicked":"pagination-more-not-clicked"}>
+            more <span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
+           </div>
+
+           {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults}/> }
+      
             </ol>
+          
+          
           </div>
+       
+  
         </section>
         </section>
       );
@@ -100,13 +116,17 @@ function LatestSectionList(props: LatestSectionListProps) {
     
   } else {
     if (props.worldnews) {
+
+
+      const paginationchunk1 = props.worldnews.results.slice(0, props.worldnews.results.length / 2);
+      const paginationchunk2 = props.worldnews.results.slice(props.worldnews.results.length / 2, props.worldnews.results.length);
       const numResults = props.worldnews.num_results;
       return (
 
         <section className="latest-section-list-section">
           <div className="latest-section-left-div">
             <ol className="latest-section-ordered-list">
-              {props.worldnews.results.map((item, index) => {
+              {paginationchunk1.map((item, index) => {
                 if (item.title) {
                   const isLastItem = index === numResults - 1;
                   return (
@@ -165,6 +185,10 @@ function LatestSectionList(props: LatestSectionListProps) {
                   return null; 
                 }
               })}
+                             <div onClick={()=>{SetpaginationMoreClicked(true)}} className={paginationMoreClicked?"pagination-more-clicked":"pagination-more-not-clicked"}>
+            more <span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
+           </div>
+           {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults}/> }
             </ol>
           </div>
         </section>
