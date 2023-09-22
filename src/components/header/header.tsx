@@ -63,6 +63,7 @@ function Header(props: HeaderProps) {
         </div>
       </div>
       {isSidebarOpen && <SideBar isOpen={isSidebarOpen} onClose={closeSidebar}/>}
+
     </header>
   );
 }

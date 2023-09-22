@@ -92,3 +92,15 @@ code {
   font-family: "franklin-regular-gothic";
   src: url("./assets/fonts/FRABK.TTF");
 }
+
+
+@font-face {
+  font-family: "Libre-franklin-regular";
+  src: url("./assets/fonts/LIBREFRANKLIN-REGULAR.TTF");
+}
+
+
+@font-face {
+  font-family: "bevan-regular";
+  src: url("./assets/fonts/BEVAN-REGULAR.TTF");
+}

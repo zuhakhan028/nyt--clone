@@ -16,10 +16,10 @@ function SideBar(props: sideBar) {
            {
             sidebarSections.map((value,index)=>{
                 return(
-                    <div className="sidebar-sections">
+                    <div className="sidebar-sections" key={index}>
                      {value.map((value,index)=>{
                         return(
-                            <ul className="each-menu-section-ul">
+                            <ul className="each-menu-section-ul" key={index}>
                               <li className="each-menu-section-li">
                                 {value}
                                 <img src={forward_icon} className="forward-arrow" alt="forward_arrow"></img>

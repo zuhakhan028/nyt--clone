@@ -1,5 +1,5 @@
 function splitStringIntoParagraphs(text:string,img:string,alt:string) {
-    console.log(img)
+
    var count:number=0;
     const paragraphs = text.split('\n');
     

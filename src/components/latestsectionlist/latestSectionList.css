@@ -1,8 +1,5 @@
 .latest-section-list-section {
     padding-top: 20px;
-
-
-
 }
 
 .last-list-item {
@@ -75,20 +72,23 @@
     color: var(--color-content-quaternary, #727272);
     margin-top: 10px;
     font-weight: 400;
+    font-family: "Libre-franklin-regular";
 }
 
 .latest-list-section-abstract {
-    font-size: 17px;
+    font-size: 15.5px;
     margin-top: 5px;
-    font-family: 'EB Garamond', 'Libre-Franklin', serif;
+    font-family: "custom-georgia-regular",'Libre-Franklin', serif;
     margin-bottom: 11px;
-    line-height: 18px;
+    line-height: 20px;
+
 }
 
 .dispatch-title-h3 {
     font-family: "cheltanham-std", 'Libre-Franklin', serif;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 400;
+    line-height: 25px;
 
 
 }
@@ -145,6 +145,7 @@
 }
 
 .more-icon {
+    margin-top: 5px;
     width: 12px;
     height: 12px;
     padding-left: 10px;
@@ -161,11 +162,7 @@
         object-fit: contain;
     }
 
-    .dispatch-title-h3 {
-        font-family: "cheltanham-std", 'Libre-Franklin', serif;
-        font-size: 16px;
-        font-weight: 400;
-    }
+ 
 
     .article-latest-section-inner-div {
         min-width: 310px;

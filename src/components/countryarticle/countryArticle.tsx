@@ -38,7 +38,6 @@ function CountryArticle() {
     : place_holder_img;
 
 
-    console.log(multimediaItem)
 
   return (
     <div className="each-article-main-div">

@@ -186,7 +186,7 @@ function LatestSectionList(props: LatestSectionListProps) {
                 }
               })}
                              <div onClick={()=>{SetpaginationMoreClicked(true)}} className={paginationMoreClicked?"pagination-more-clicked":"pagination-more-not-clicked"}>
-            more <span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
+           more Latest News<span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
            </div>
            {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults}/> }
             </ol>

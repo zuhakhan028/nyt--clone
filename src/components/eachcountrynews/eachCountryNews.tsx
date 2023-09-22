@@ -61,7 +61,7 @@ return(
         {props.data ? <div>
             <div>
                 {CountryNewsData.map((item, index) => {
-                    console.log(item)
+                 
                     return(
                        
                     <li key={index} className={contryNewsDataLength==index?"last-list-item":"latest-section-list"}>
@@ -126,7 +126,7 @@ return(
         {props.data ? <div>
             <div>
                 {CountryNewsData.map((item, index) => {
-                    console.log(item)
+              
                     return(
                        
                     <li key={index} className={"latest-section-list"}>
