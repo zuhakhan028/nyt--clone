@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <div className='inner-app-div'>
         <Header text={"WORLD NEWS"}/>
-        <section className='middle-section'>
+        <main className='main'>
           <HeadLines />
           <Footer/>
-        </section>
+        </main>
       
       </div>
     

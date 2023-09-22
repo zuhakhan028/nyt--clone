@@ -38,6 +38,10 @@
     
    
 }
+.dispatch-img-div{
+    width: 207px;
+    height: 136px;
+}
 
 
 .dispatch-img{
@@ -60,9 +64,9 @@
    
 }
 .dispatch-inner-div{
-    width: 200px; 
+    width: 206px; 
     min-height: 248px;
-    padding: 0 27px 0 20px;
+    padding: 0 20px 0 20px;
     border-right:  1px solid var(--color-stroke-quaternary);
    
 }
@@ -78,9 +82,10 @@
 
 .dispatch-figure{
     float: none;
-    width: 100%;
+    width: 207px;
+    height:136px;
     margin-left: 0;
-    margin-bottom: 2px;
+    margin-bottom: 15px;
     margin-top: 0;
 }
 

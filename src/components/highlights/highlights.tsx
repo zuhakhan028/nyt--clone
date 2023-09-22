@@ -57,7 +57,7 @@ function Highlights(props: highlightsData) {
             <section className="collection-highlight-container">
                 <div>
                     <ol className="top-highlights-list">
-                        <div className="collection-highlight-container-inner-div">
+                        <ol className="collection-highlight-container-inner-div">
                             {consecutiveHeadlines.slice(0, 2).map((result, index) => (
                                 <li key={result.title} className={`headline-${index + 1}-li`}>
                                     <Link
@@ -106,7 +106,7 @@ function Highlights(props: highlightsData) {
                                     </Link>
                                 </li>
                             ))}
-                        </div>
+                        </ol>
 
 
 
@@ -269,7 +269,7 @@ function Highlights(props: highlightsData) {
                                             <div className="highlights-right-div">
                                                 <span>
                                                     <figure className="highlights-right-div-fig">
-                                                        <div>
+                                                        <div className="headline-3-li-img-parent-div">
                                                             <LazyLoadImage
                                                                 src={consecutiveHeadlines[2].multimedia[1].url}
                                                                 className="headline-3-img"
@@ -286,9 +286,9 @@ function Highlights(props: highlightsData) {
                                                 </span>
                                             </div>
                                             <p className="highlight-abstract">
-                                                {consecutiveHeadlines[3].abstract.length > 80
-                                                    ? consecutiveHeadlines[3].abstract.slice(0, 90) + "."
-                                                    : consecutiveHeadlines[3].abstract}
+                                                {consecutiveHeadlines[2].abstract.length > 80
+                                                    ? consecutiveHeadlines[2].abstract.slice(0, 90) + "."
+                                                    : consecutiveHeadlines[2].abstract}
                                             </p>
                                             <p className="time-ago-right-div">
                                                 <span className="byline-span">{`${getTimeAgo(consecutiveHeadlines[2].created_date)} .`} </span>

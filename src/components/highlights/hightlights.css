@@ -8,6 +8,8 @@
 .collection-highlight-container-inner-div{
     display: flex;
     flex-direction: row;
+    list-style: none;
+    padding: 0;
 }
 
 .top-highlights-list {
@@ -24,6 +26,7 @@
     position: relative;
     padding: 0;
 }
+
 
 .headline-1-img {
     width: 606px;
@@ -95,12 +98,14 @@ text-align: right;
 }
 
 
+
+
 .headline-3-img{
     width: 75px;
     height: 75px;
-    margin-top: 19px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    padding-left: 15px;
+    padding-left: 12px;
     object-fit:cover;
 }
 .highlights-right-div{
@@ -192,7 +197,9 @@ text-decoration: underline;
 
 .route-next-page{
     text-decoration: none;
-    color:black
+    color:black;
+    position:relative;
+    width: 100%;
 }
 
 .headline-3-li-700{

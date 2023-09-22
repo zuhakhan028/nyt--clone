@@ -38,7 +38,10 @@ function MiniHighlights(props: MiniHighlightsProps) {
                     <figure className="mini-highlight-figure">
                       <div className="mini-highlight-figure-inner-div">
                         {item.multimedia && item.multimedia.length > 0 && item.multimedia[0] ? (
-                          <LazyLoadImage src={item.multimedia[0].url} className="mini-highlight-img" alt={item.multimedia[0].caption} placeholderSrc={place_holder_img} />
+                          <div className="minihighlight-img-parent-div">
+                               <LazyLoadImage src={item.multimedia[0].url} className="mini-highlight-img" alt={item.multimedia[0].caption} placeholderSrc={place_holder_img} />
+                          </div>
+                       
                         ) : (
                           <div className="image-not-available">Image not available</div>
                         )}
