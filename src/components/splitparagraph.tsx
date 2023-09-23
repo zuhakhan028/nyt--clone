@@ -7,7 +7,7 @@ const articleBody=paragraphs.map((para,index)=>{
     count++
     if(count==3){
         return(
-            <img src={img} key={index} alt={alt}></img>
+            <img src={img} key={index} alt={alt} className="article-main-img"></img>
         )
     }else{
         return(

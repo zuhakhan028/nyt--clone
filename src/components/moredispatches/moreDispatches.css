@@ -67,7 +67,12 @@
     align-items: center;
 }
 
+.middle-section-dipatches{
+width: 1200px;
+}
 
-@media screen and (max-width:700px) {
-  
+@media screen and (max-width:425px) {
+    .middle-section-dipatches {
+        width: 400px;
+    }
 }

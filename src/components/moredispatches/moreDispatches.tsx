@@ -46,7 +46,7 @@ function MoreDispatches(props:MoreDispatches){
             <div className="more-dispatches">
                 <div className='inner-app-div'>
                     <Header text={props.text.toUpperCase()} />
-                    <section className='middle-section'>
+                    <section className='middle-section-dipatches'>
                         <div className="news-section-dispatches">
                             WORLD
                         </div>
