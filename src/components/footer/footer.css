@@ -177,3 +177,12 @@
         font-size: 12px;
     }
 }
+
+@media screen and (max-width:425px){
+    .footer-subcategory-link{
+        font-size: 12px;
+    }
+    .footer-subcategory-link-right-div{
+        font-size: 10px;
+    }
+}

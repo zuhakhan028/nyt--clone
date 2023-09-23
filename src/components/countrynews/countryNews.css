@@ -42,3 +42,18 @@
 
    
 }
+
+
+@media screen  and (max-width:425px){
+    .middle-section-each-country{
+        width: 410px;
+    }
+    .news-section-h1-each-country {
+        margin: 6px 0;
+        font-family: 'KarnakFont','Noto Serif Georgian', 'Libre-Franklin',serif;
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 44px;
+    }
+   
+}

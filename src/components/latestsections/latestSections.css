@@ -103,3 +103,11 @@ border-bottom:2px solid var(--color-stroke-quaternary,#DFDFDF) ;
         /* padding-left: 180px; */
     }
 }
+
+@media screen and (max-width:425px) {
+    .latest-section-ul{
+        width: 89vw;
+        /* padding-left: 180px; */
+    }
+}
+
