@@ -98,9 +98,11 @@
 .headline-3-li {
  
     padding-right: 0px;
-    padding-left: 15px;
+  
     display: flex;
     flex-direction: column;
+    list-style: none;
+    padding-left: 15px;
 
 }
 
@@ -194,11 +196,15 @@ height: 400px;
 
 }
 .highlight-right-top-div{
+    list-style: none;
+    padding-left: 0px;
     padding-bottom: 19px;
     border-bottom: 1px solid var(--color-stroke-quaternary);
 }
 
 .highlight-right-bottom-div{
+    list-style: none;
+    padding-left: 0px;
     padding-bottom: 19px;
     padding-top: 19px;
 
@@ -216,6 +222,7 @@ text-decoration: underline;
 }
 
 .headline-3-li-700{
+
     display: none;
 }
 
@@ -359,6 +366,8 @@ text-decoration: underline;
         justify-content: center;
         border-bottom: 1px solid var(--color-stroke-quaternary);
         margin-bottom: 20px;
+        list-style: none;
+        padding-left: 0px;
     }
 
     .highlight-right-bottom-div{

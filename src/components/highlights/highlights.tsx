@@ -91,7 +91,7 @@ function Highlights(props: highlightsData) {
                                                 <p className={`time-ago`}>
                                                     <span className="byline-span">
                                                         {`${getTimeAgo(result.created_date)} `}
-                                                      
+
                                                     </span>
                                                     <span className="byline-dot">  </span>
                                                     <span
@@ -111,8 +111,8 @@ function Highlights(props: highlightsData) {
 
 
 
-                        <li className="headline-3-li">
-                            <div className="highlight-right-top-div">
+                        <ol className="headline-3-li">
+                            <li className="highlight-right-top-div">
                                 <Link
                                     to={`/article/${consecutiveHeadlines[3].byline}`}
                                     className="route-next-page"
@@ -157,9 +157,9 @@ function Highlights(props: highlightsData) {
 
                                     </article>
                                 </Link>
-                            </div>
+                            </li>
 
-                            <div key={consecutiveHeadlines[3].title} className={`headline-3-li-700`}>
+                            <li key={consecutiveHeadlines[3].title} className={`headline-3-li-700`}>
                                 <Link
                                     to={`/article/${consecutiveHeadlines[3].byline}`}
                                     className="route-next-page"
@@ -204,10 +204,10 @@ function Highlights(props: highlightsData) {
                                         </div>
                                     </article>
                                 </Link>
-                            </div>
+                            </li>
 
 
-                            <div key={consecutiveHeadlines[2].title} className={`headline-3-li-700`}>
+                            <li key={consecutiveHeadlines[2].title} className={`headline-3-li-700`}>
                                 <Link
                                     to={`/article/${consecutiveHeadlines[2].byline}`}
                                     className="route-next-page"
@@ -252,7 +252,7 @@ function Highlights(props: highlightsData) {
                                         </div>
                                     </article>
                                 </Link>
-                            </div>
+                            </li>
 
 
 
@@ -307,7 +307,7 @@ function Highlights(props: highlightsData) {
 
 
 
-                        </li>
+                        </ol>
                     </ol>
                 </div>
 

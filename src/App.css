@@ -41,3 +41,11 @@ margin-top: 45px;
     width: 670px;
   }
 }
+
+
+@media screen and (max-width:354px) {
+  .inner-app-div{
+    width: 340px;
+ 
+  }
+}

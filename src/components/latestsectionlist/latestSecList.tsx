@@ -7,7 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { formatNames } from "../formatNames";
 import place_holder_img from "../../assets/images/placeholder-image.png"
 import { useState } from "react"
-import Pagination from "../pagination";
+import Pagination from "../pagination/pagination";
 import more_icon from "../../assets/images/more.svg"
 interface LatestSectionListProps {
   index: number;
@@ -91,14 +91,14 @@ function LatestSectionList(props: LatestSectionListProps) {
                     return null;
                   }
                 })}
-                <div onClick={() => { SetpaginationMoreClicked(true) }} className={paginationMoreClicked ? "pagination-more-clicked" : "pagination-more-not-clicked"}>
-                  more <span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
-                </div>
+                <li onClick={() => { SetpaginationMoreClicked(true) }} className={paginationMoreClicked ? "pagination-more-clicked" : "pagination-more-not-clicked"}>
+                  ore Latest News <span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
+                </li>
 
                 {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults} />}
 
               </ol>
-
+           
 
             </div>
 
@@ -185,11 +185,12 @@ function LatestSectionList(props: LatestSectionListProps) {
                   return null;
                 }
               })}
-              <div onClick={() => { SetpaginationMoreClicked(true) }} className={paginationMoreClicked ? "pagination-more-clicked" : "pagination-more-not-clicked"}>
+              <li onClick={() => { SetpaginationMoreClicked(true) }} className={paginationMoreClicked ? "pagination-more-clicked" : "pagination-more-not-clicked"}>
                 More Latest News<span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
-              </div>
-              {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults} />}
+              </li>    
+              {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults} />}       
             </ol>
+       
           </div>
         </section>
       );

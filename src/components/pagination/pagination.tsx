@@ -1,9 +1,10 @@
 import React from "react"
-import { formatDate } from "./formatDate";
-import { formatNames } from "./formatNames";
+import "./pagination.css"
+import { formatDate } from "../formatDate";
+import { formatNames } from "../formatNames";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import {Link} from "react-router-dom"
-import place_holder_img from "../assets/images/placeholder-image.png"
+import place_holder_img from "../../assets/images/placeholder-image.png"
 
 interface Pagination{
     paginationData:any;
@@ -17,7 +18,7 @@ function Pagination(props:Pagination){
 return(
 
  
- <div>
+ <ol className="pagination-ol">
             {props.paginationData.map((item:any, index:any) => {
           if (item.title) {
             const isLastItem = index === props.numResults - 1;
@@ -68,12 +69,17 @@ return(
                 </Link>
               </li>
             );
-          } else {
-            return null; 
+          } 
+          
+          
+          else {
+            return(
+                <div>Loading Latest News</div>
+            ) 
           }
         })}
 
- </div>
+ </ol>
 
 
    
