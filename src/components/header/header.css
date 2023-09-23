@@ -273,9 +273,8 @@
 }
 
 
-@media screen and (max-width:354px) {
+@media screen and (max-width:311px) {
    .inner-header-div{
-    width:350px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -296,17 +295,17 @@
    }
    .logo-div{
     display: inline-block;
-    width: 185px;
+  
    }
 
    .header-middle-section{
     margin: 0;
-    width: 185px;
+  
    
    }
 
    .logo-icon{
-    width: 185px;
+    width: 155px;
     height: 25px;
    }
 
@@ -320,6 +319,7 @@
     display: inline;
     margin-top: 10px;
     cursor: pointer;
+    margin-left: 50px;
    
 }
 
