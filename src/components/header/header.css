@@ -5,9 +5,11 @@
     display: flex;
     align-items: center;
 }
-.outer-header-div{
+
+.outer-header-div {
     border-bottom: 1px solid rgba(226, 226, 226);
 }
+
 .inner-header-div {
     width: 1200px;
     padding: 4px 5px 2px 5px;
@@ -32,7 +34,7 @@
 .search-icon {
     width: 16px;
     height: 16px;
- 
+
 }
 
 .news-section {
@@ -89,7 +91,7 @@
     margin-right: 20px;
     margin-top: 1px;
     line-height: 11px;
-    
+
 }
 
 .account-div {
@@ -100,7 +102,7 @@
     color: rgba(18, 18, 18, 0.65);
 }
 
-.profile-icon-img{
+.profile-icon-img {
     display: none;
     width: 24px;
     height: 24px;
@@ -121,209 +123,217 @@
 
 
 @media screen and (max-width:1280px) {
-    .header{
-      margin: 0;
-      padding: 0px 20px;
-      display: flex;
-        
+    .header {
+        margin: 0;
+        padding: 0px 20px;
+        display: flex;
+
     }
-    
-   
+
+
 }
 
 @media screen and (max-width:1244px) {
-   
-    .header-middle-section{
+
+    .header-middle-section {
         width: 40%;
     }
-    .header-right-section{
-        margin-left:10%
+
+    .header-right-section {
+        margin-left: 10%
     }
-    .inner-header-div{
+
+    .inner-header-div {
         justify-content: space-around;
-        width:100vw;
+        width: 100vw;
     }
-   
+
 }
 
 @media screen and (max-width:1150px) {
-   .header{
-    padding: 0px 5px;
-   }
-    
-   .header-middle-section{
-    width: 35%;
-}
-.header-right-section{
-    margin-left:0px
-}
-   
+    .header {
+        padding: 0px 5px;
+    }
+
+    .header-middle-section {
+        width: 35%;
+    }
+
+    .header-right-section {
+        margin-left: 0px
+    }
+
 }
 
-@media screen and (max-width:1000px){
-    .header{
+@media screen and (max-width:1000px) {
+    .header {
         width: 97vw;
     }
-   
+
     .search-icon {
         display: none;
-    } 
+    }
 
-    .subscription-button{
+    .subscription-button {
         display: none;
     }
 
-    .news-section{
+    .news-section {
         display: none;
     }
-   
+
 
     .inner-header-div {
-       display: flex;
-       width: 96vw;
-       justify-content: left;
-       padding: 20px;
-       
+        display: flex;
+        width: 96vw;
+        justify-content: left;
+        padding: 20px;
+
     }
 
-    .header-left-section{
+    .header-left-section {
         margin-right: 30%;
     }
+
     .logo-icon {
         width: 225px;
         height: 30px;
         margin-top: 8px;
-     
-      
-    }
-    .profile-icon-img{
-       width: 24px;
-       height: 24px;
-       display: inline-block;
-       margin-top: 10px;
-       cursor: pointer;
-   
-       
+
+
     }
 
-    .account-div{
+    .profile-icon-img {
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        margin-top: 10px;
+        cursor: pointer;
+
+
+    }
+
+    .account-div {
         display: none;
     }
-   
-    .header-middle-section{
+
+    .header-middle-section {
         margin-right: 250px;
     }
-    
+
 }
 
-@media screen and (max-width:700px){
-    .header{
+@media screen and (max-width:700px) {
+    .header {
         width: 97vw;
     }
-   
+
     .search-icon {
         display: none;
-    } 
+    }
 
-    .subscription-button{
+    .subscription-button {
         display: none;
     }
 
-    .news-section{
+    .news-section {
         display: none;
     }
-   
+
 
     .inner-header-div {
-       display: flex;
-       width: 96vw;
-       justify-content: left;
-       padding: 20px;
-       
+        display: flex;
+        width: 96vw;
+        justify-content: left;
+        padding: 20px;
+
     }
 
-    .header-left-section{
+    .header-left-section {
         margin-right: 25%;
     }
+
     .logo-icon {
         width: 225px;
         height: 30px;
         margin-top: 8px;
-     
-      
-    }
-    .profile-icon-img{
-       width: 24px;
-       height: 24px;
-       display: inline-block;
-       margin-top: 10px;
-       cursor: pointer;
-   
-       
+
+
     }
 
-    .account-div{
+    .profile-icon-img {
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        margin-top: 10px;
+        cursor: pointer;
+
+
+    }
+
+    .account-div {
         display: none;
     }
-   
-    .header-middle-section{
+
+    .header-middle-section {
         margin-right: 180px;
     }
-    
+
 }
 
 
-@media screen and (max-width:395px) {
+@media screen and (max-width:425px) {
 
-  
-   .inner-header-div{
-    width: 395px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   }
 
-   .header-left-section{
-    display: inline;
-    margin-right: 0px;
-   }
+    .inner-header-div {
+        width: 420px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-   .header-icons-div{
-    padding:0;
-    margin: 0px;
-   }
+    .header-left-section {
+        display: inline;
+        margin-right: 0px;
+    }
 
-   .header-middle-section{
-    display: inline;
-   }
-   .logo-div{
-    display: inline-block;
-  
-   }
+    .header-icons-div {
+        padding: 0;
+        margin: 0px;
+    }
 
-   .header-middle-section{
-    margin: 0;
-  
-   
-   }
+    .header-middle-section {
+        display: inline;
+    }
 
-   .logo-icon{
-    width: 155px;
-    height: 25px;
-   }
+    .logo-div {
+        display: inline-block;
 
-   .header-right-section{
-    display: inline;
-   }
+    }
 
-   .profile-icon-img {
-    width: 24px;
-    height: 24px;
-    display: inline;
-    margin-top: 10px;
-    cursor: pointer;
-    margin-left: 50px;
-   
+    .header-middle-section {
+        margin: 0;
+
+
+    }
+
+    .logo-icon {
+        width: 155px;
+        height: 25px;
+    }
+
+    .header-right-section {
+        display: inline;
+    }
+
+    .profile-icon-img {
+        width: 24px;
+        height: 24px;
+        display: inline;
+        margin-top: 10px;
+        cursor: pointer;
+        margin-left: 50px;
+
+    }
+
 }
-
-  }

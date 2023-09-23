@@ -26,3 +26,14 @@ cursor: pointer;
 .country-link:hover{
    text-decoration: underline;
 }
+
+
+@media screen and (max-width:425px){
+    .country-link{
+        text-decoration: none;
+        color: black;
+        font-family: "franklin-regular-gothic",'Libre-Franklin',serif;
+        /* font-size: 12px; */
+        font-size:8.8px
+    }
+}

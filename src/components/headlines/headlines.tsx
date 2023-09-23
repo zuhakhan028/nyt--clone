@@ -7,6 +7,7 @@ import MiniHighlights from "../minihighlights/miniHighlights";
 import Dispatches from "../dispatches/dispatches";
 import LatestSections from "../latestsections/latestSections";
 
+
 function HeadLines() {
   const [worldNewsResult, setWorldNewsResult] = useState<worldNewsModule>()
   var requestOptions: any = {
@@ -28,6 +29,7 @@ function HeadLines() {
           <CountriesList />
         </ul>
       </nav>
+     
       <>
         <Highlights worldnews={worldNewsResult} />
         <MiniHighlights worldnews={worldNewsResult} startIndex={4} endIndex={8} />

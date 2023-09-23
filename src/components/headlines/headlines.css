@@ -30,3 +30,14 @@
         font-size: 32px;
     }
 }
+
+@media screen and (max-width:425px){
+    .countries-navbar{
+        display: inline;
+    }
+
+    .headlines{
+        margin-bottom: 20px;
+    }
+   
+}
