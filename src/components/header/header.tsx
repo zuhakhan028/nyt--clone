@@ -58,7 +58,7 @@ function Header(props: HeaderProps) {
               <img className="drop_down_icon" src={drop_down_icon} alt="drop_down" />
             
             </div>
-            <img src={profile_icon} className="profile-icon-img"></img>
+            <img src={profile_icon} className="profile-icon-img" alt="profile_icon"></img>
           </div>
         </div>
       </div>

@@ -45,7 +45,7 @@ function CountryNews() {
                                 </h1>
                             </div>
                             <div className="share-outer-div">
-                                <a><img src={search_icon} className="share-img" alt={"share-img"}></img></a>
+                                <a><img src={search_icon} className="share-img" alt="share-img"></img></a>
                             </div>
                         </div>
                         <EachCountryNews data={eachCountryNews}/>

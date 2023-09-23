@@ -55,6 +55,11 @@ code {
 } 
 
 @font-face {
+  font-family: "karnak-medium";
+  src: url("./assets/fonts/KARNAKPRO-MEDIUM.TTF");
+}
+
+@font-face {
   font-family: "cheltenham-italic-light";
   src: url("assets/fonts/CHELTENHAMSTDLIGHTITALIC.OTF");
 }
@@ -104,3 +109,4 @@ code {
   font-family: "bevan-regular";
   src: url("./assets/fonts/BEVAN-REGULAR.TTF");
 }
+

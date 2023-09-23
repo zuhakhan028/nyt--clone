@@ -13,17 +13,18 @@
     width: 1200px;
 }    
 .news-section-dispatches{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 19px;
     margin-left: 0px;
     padding-top: 8px;
     margin-top: 15px;
-    font-family:"Noto Serif Georgian",'Libre-Franklin',serif;
+    font-family:"karnak-medium",'Libre-Franklin',serif;
+    letter-spacing: 1px;
 }
 
 .news-section-h1{
-    margin: 10px 0;
+    margin: 5px 0;
     font-family: 'KarnakFont','Noto Serif Georgian', 'Libre-Franklin',serif;
     font-size: 36px;
    
@@ -32,6 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 7px;
 }
 .share-outer-div{
     border-radius: 50%;
@@ -49,7 +51,7 @@
 .tagline-more-disptches{
     color: var(--color-content-quaternary,#7272);
     letter-spacing: 0.17px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     font-family: "cheltanham-std",'Libre-Franklin',serif;
     margin-top: 14px;

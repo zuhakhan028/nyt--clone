@@ -17,6 +17,7 @@ import place_holder_img from "../..//assets/images/placeholder-image.png"
 import splitStringIntoParagraphs from "../splitparagraph";
 import { useState, useEffect } from "react";
 import { EachCountryNewsData } from "../../assets/module";
+import CallToAction from "../calltoaction/callToAction";
 
 
 
@@ -50,15 +51,7 @@ if (metaDescription) {
                         {worldnews.abstract}
                     </p>
                     <div className="article-top-div">
-                        <div className="article-cta-div">
-                            <div className="share-full-article">
-                                <img src={gift_icon} alt={"gift-icon"} className="gift-icon" ></img>
-                                <span>Share full article</span>
-                            </div>
-                            <div className="article-share-div"> <img src={share_icon} className="article-share-icon" alt={"share-icon"}></img></div>
-                            <div className="article-share-div"> <img src={save_icon} className="article-save-icon" alt={"save-icon"}></img></div>
-
-                        </div>
+                        <CallToAction/>
                         <div className="article-middle-div">
                             <figure className="article-figure">
                                 <div>
@@ -82,15 +75,7 @@ if (metaDescription) {
                         </div>
                         <CommentsButton />
                         <div className="article-end-cta-div">
-                            <div className="article-cta-div">
-                                <div className="share-full-article">
-                                    <img src={gift_icon} alt={"gift-icon"} className="gift-icon"></img>
-                                    <span>Share full article</span>
-                                </div>
-                                <div className="article-share-div"> <img src={share_icon} className="article-share-icon" alt={"share-icon"}></img></div>
-                                <div className="article-share-div"> <img src={save_icon} className="article-save-icon" alt={"save-icon"}></img></div>
-
-                            </div>
+                            <CallToAction/>
                         </div>
 
                     </div>

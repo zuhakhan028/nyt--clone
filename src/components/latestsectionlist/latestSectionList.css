@@ -18,7 +18,7 @@
 }
 
 .latest-section-left-div {
-    max-width: 70%;
+    max-width: 71%;
 
 }
 
@@ -126,7 +126,7 @@
     text-align: center;
     font-size: 18px;
     padding-bottom: 20px;
-    color: gray;
+    color: rgb(78, 75, 75);
     display: flex;
     flex-direction: row;
     align-items: center;
