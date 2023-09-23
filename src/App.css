@@ -43,9 +43,9 @@ margin-top: 45px;
 }
 
 
-@media screen and (max-width:311px) {
+@media screen and (max-width:395px) {
   .inner-app-div{
-    width: 305px;
+    width: 390px;
  
   }
 }
