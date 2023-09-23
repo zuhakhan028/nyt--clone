@@ -2,3 +2,21 @@
     list-style: none;
     padding-left: 0px;
 }
+
+.last-list-item-425{
+    display: none;
+} 
+.latest-section-list-425{
+    display: none;
+}
+
+@media screen and (max-width:425px){
+    .last-list-item{
+display: none;
+    }
+  
+   
+    .latest-section-list-425{
+        display: inline;
+    }
+}

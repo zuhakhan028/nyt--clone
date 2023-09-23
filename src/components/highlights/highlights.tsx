@@ -81,7 +81,7 @@ function Highlights(props: highlightsData) {
                                                     </span>
                                                 </figcaption>
                                             </figure>
-                                            <div>
+                                            <div className="highlights-title-425">
                                                 <h3 className={`hightlights-title`}>
                                                     {result.title}
                                                 </h3>
@@ -166,7 +166,7 @@ function Highlights(props: highlightsData) {
                                     state={consecutiveHeadlines[3]}
                                 >
                                     <article className="highlight-article">
-                                        <figure className="fig-div">
+                                        <figure className="fig-div-425">
                                             <div>
                                                 <LazyLoadImage
                                                     src={consecutiveHeadlines[3].multimedia[1].url}
@@ -175,7 +175,7 @@ function Highlights(props: highlightsData) {
                                                     placeholderSrc={place_holder_img}
                                                 />
                                             </div>
-                                            <figcaption className="fig-caption">
+                                            <figcaption className="fig-caption-425">
                                                 <span >
                                                     {consecutiveHeadlines[3].multimedia[0].copyright.toUpperCase()}
                                                 </span>
@@ -185,7 +185,7 @@ function Highlights(props: highlightsData) {
                                             <h3 className={`hightlights-title`}>
                                                 {consecutiveHeadlines[3].title}
                                             </h3>
-                                            <p className={`highlight-abstract`}>
+                                            <p className={`highlight-abstract-425`}>
                                                 {consecutiveHeadlines[3].abstract}
                                             </p>
                                             <p className={`time-ago`}>
@@ -214,7 +214,7 @@ function Highlights(props: highlightsData) {
                                     state={consecutiveHeadlines[2]}
                                 >
                                     <article className="highlight-article">
-                                        <figure className="fig-div">
+                                        <figure className="fig-div-425">
                                             <div>
                                                 <LazyLoadImage
                                                     src={consecutiveHeadlines[2].multimedia[1].url}
@@ -223,7 +223,7 @@ function Highlights(props: highlightsData) {
                                                     placeholderSrc={place_holder_img}
                                                 />
                                             </div>
-                                            <figcaption className="fig-caption">
+                                            <figcaption className="fig-caption-425">
                                                 <span >
                                                     {consecutiveHeadlines[2].multimedia[0].copyright.toUpperCase()}
                                                 </span>
@@ -233,7 +233,7 @@ function Highlights(props: highlightsData) {
                                             <h3 className={`hightlights-title`}>
                                                 {consecutiveHeadlines[2].title}
                                             </h3>
-                                            <p className={`highlight-abstract`}>
+                                            <p className={`highlight-abstract-425`}>
                                                 {consecutiveHeadlines[2].abstract}
                                             </p>
                                             <p className={`time-ago`}>

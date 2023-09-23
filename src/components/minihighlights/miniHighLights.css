@@ -291,19 +291,19 @@
         padding-bottom: 20px;
         border-bottom:  1px solid var(--color-stroke-quaternary);
         margin-bottom: 20px;
-        width: 95%;
-        margin-left: 20px;
+        margin-left: 10px;
         margin-top: 20px;
     
        
     }
     .highlight-li-inner-div-700{
         display: flex;
+        width: 390px;
      
     
     }
-    .first-item {
-      
+    .first-item {  
+        width: 390px;
         align-items: center;
         padding-left: 0;
         padding-right: 0px;
@@ -342,7 +342,7 @@
         margin-top: 0px;
         padding-bottom: 0;
         font-family: 'EB Garamond', 'Libre-Franklin', serif;
-        border-top:none;
+ 
       
        
     
@@ -359,4 +359,6 @@
         align-items: flex-start;
         margin-top: 15px;
     }
+
+    
     }
