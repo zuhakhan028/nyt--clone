@@ -4,6 +4,8 @@ import Footer from './components/footer/footer';
 import './App.css';
 import Header from './components/header/header';
 
+
+// App Component
 const App:React.FC =() =>{
   return (
     <div className="App">
