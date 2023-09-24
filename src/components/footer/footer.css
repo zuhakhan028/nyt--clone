@@ -1,119 +1,109 @@
-.footer{
-   border-top: 1px solid var(--color-stroke-quaternary,#DFDFDF);
-   margin-top: 2px;
-  margin-bottom: 35px;
-  padding-bottom: 9px;
-   
+.footer {
+    border-top: 1px solid var(--color-stroke-quaternary, #DFDFDF);
+    margin-top: 2px;
+    margin-bottom: 35px;
+    padding-bottom: 9px;
 }
 
-.footer-nyt-logo{
+.footer-nyt-logo {
     width: 184px;
     height: 44px;
 }
 
-.footer-header{
+.footer-header {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-to-home-div{
+.footer-to-home-div {
     font-size: 11px;
     font-weight: 400;
-    cursor: pointer; 
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.footer-inner-div{
+.footer-inner-div {
     margin-top: 10px;
     display: flex;
-    border-bottom: 1px solid var(--color-stroke-quaternary,#DFDFDF);
+    border-bottom: 1px solid var(--color-stroke-quaternary, #DFDFDF);
     padding-bottom: 9px;
-   
 }
 
-.footer-subcategory{
+.footer-subcategory {
     list-style: none;
-  
 }
 
-.footer-subcategories{
-   margin: 0;
-   padding: 0;
-  
+.footer-subcategories {
+    margin: 0;
+    padding: 0;
 }
 
-.footer-subcategory-link{
+.footer-subcategory-link {
     text-decoration: none;
-    color:black;
-   font-size: 14px;
-   font-weight: 400;
-   line-height: 25px;
-
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
 }
 
-.footer-icons{
+.footer-icons {
     width: 13px;
     height: 13px;
-    margin-right:7px;
+    margin-right: 7px;
 }
 
-.footer-section-title{
+.footer-section-title {
     font-size: 13px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0px;
     line-height: 20px;
-   
 }
 
-.footer-section{
-  
+.footer-section {
     width: 197px;
 }
 
-.footer-subcategory-link-right-div{
+.footer-subcategory-link-right-div {
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
-    color: black;  
+    color: black;
 }
 
-.footer-subcategory-right-div{
+.footer-subcategory-right-div {
     height: 25px;
     list-style: none;
     display: flex;
     margin-bottom: 5px;
-
 }
 
-.footer-right-section{
-    border-left:  1px solid var(--color-stroke-quaternary);
- 
+.footer-right-section {
+    border-left: 1px solid var(--color-stroke-quaternary);
     padding-left: 15px;
 }
 
-.newsletter-div-ul{
+.newsletter-div-ul {
     list-style: none;
-    padding:0;
+    padding: 0;
     font-size: 11px;
     font-weight: 400;
     line-height: 16px;
-  
 }
 
-.newsletter-div-li{
+.newsletter-div-li {
     font-size: 11px;
     font-weight: 400;
     line-height: 20px;
 }
 
-.footer-upper-right-div{
+.footer-upper-right-div {
     border-bottom: 1px solid var(--color-stroke-quaternary);
 }
 
-.copyright-div{
+.copyright-div {
     display: flex;
     font-size: 11px;
     font-weight: 400;
@@ -123,66 +113,68 @@
     padding-left: 0px;
 }
 
-.footer-copy-right-li{
+.footer-copy-right-li {
     padding: 10px 0px;
     list-style: none;
     color: #666
 }
 
 
- @media screen and (max-width:1000px){
+@media screen and (max-width:1000px) {
 
     .footer {
-        border-top: 1px solid var(--color-stroke-quaternary,#DFDFDF);
+        border-top: 1px solid var(--color-stroke-quaternary, #DFDFDF);
         margin-top: 2px;
         margin-bottom: 15px;
         padding-bottom: 9px;
     }
- 
-   .footer-subcategory-right-div{
-    margin-top: 10px;
-    line-height: 18px;
 
-   }
-   .footer-subcategory-link-right-div{
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
-    color: black;  
-    display: flex;
-    flex-wrap: nowrap;
+    .footer-subcategory-right-div {
+        margin-top: 10px;
+        line-height: 18px;
+
+    }
+
+    .footer-subcategory-link-right-div {
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .copyright-div {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-top: 9px;
+
+        padding-left: 0px;
+    }
+
+    .footer-copy-right-li {
+        margin-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 
-.copyright-div {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 20px;
-    padding-top: 9px;
 
-    padding-left: 0px;
-}
-
-.footer-copy-right-li{
-    margin-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-}
-
-
-@media screen and (max-width:700px){
-    .footer-subcategory-link{
+@media screen and (max-width:700px) {
+    .footer-subcategory-link {
         font-size: 12px;
     }
 }
 
-@media screen and (max-width:425px){
-    .footer-subcategory-link{
+@media screen and (max-width:425px) {
+    .footer-subcategory-link {
         font-size: 12px;
     }
-    .footer-subcategory-link-right-div{
+
+    .footer-subcategory-link-right-div {
         font-size: 10px;
     }
 }

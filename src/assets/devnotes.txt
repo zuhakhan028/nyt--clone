@@ -1,1 +1,1 @@
-This website is responsive for screen sizes of width 1500px,1250px,1000px
+This website is responsive for screen sizes of max-width 1500px,1250px,1000px,700,425px

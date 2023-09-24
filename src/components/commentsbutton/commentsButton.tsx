@@ -1,9 +1,9 @@
 import "./commentsButton.css"
 
-function CommentsButton(){
-    return(
+const CommentsButton: React.FC = () => {
+    return (
         <div className="comment-button">
-        READ 97 COMMENTS
+            READ 97 COMMENTS
         </div>
     )
 }

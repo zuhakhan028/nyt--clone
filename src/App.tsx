@@ -4,20 +4,16 @@ import Footer from './components/footer/footer';
 import './App.css';
 import Header from './components/header/header';
 
-function App() {
-  
-
+const App:React.FC =() =>{
   return (
     <div className="App">
       <div className='inner-app-div'>
-        <Header text={"WORLD NEWS"}/>
+        <Header text={"WORLD NEWS"} />
         <main className='main'>
           <HeadLines />
-          <Footer/>
+          <Footer />
         </main>
-      
       </div>
-    
     </div>
   );
 }

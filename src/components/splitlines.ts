@@ -11,9 +11,9 @@
         currentLine += `${word} `;
         wordCount += 1;
         if (wordCount === Math.floor(words.length / 2)) {
-          // Insert the image tag here
+   
           lines.push(currentLine.trim());
-          lines.push(`<img src="${imageSrc}" alt="Image" />`);
+          lines.push(`<img src="${imageSrc}" alt="article-img-2" />`);
           currentLine = '';
         }
       } else {

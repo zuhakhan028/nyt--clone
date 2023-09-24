@@ -11,7 +11,7 @@ interface HeaderProps {
   text: string;
 }
 
-function Header(props: HeaderProps) {
+const Header:React.FC<HeaderProps>=(props)=> {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -51,18 +51,18 @@ function Header(props: HeaderProps) {
           <div className="header-right-section">
             <div className="subscription-button">
               SUBSCRIBE FOR &#8377;600/YEAR
-            
+
             </div>
             <div className="account-div">
               Account
-              <img className="drop_down_icon" src={drop_down_icon} alt="drop_down" />
-            
+              <img className="drop-down-icon" src={drop_down_icon} alt="drop_down" />
+
             </div>
             <img src={profile_icon} className="profile-icon-img" alt="profile_icon"></img>
           </div>
         </div>
       </div>
-      {isSidebarOpen && <SideBar isOpen={isSidebarOpen} onClose={closeSidebar}/>}
+      {isSidebarOpen && <SideBar isOpen={isSidebarOpen} onClose={closeSidebar} />}
 
     </header>
   );

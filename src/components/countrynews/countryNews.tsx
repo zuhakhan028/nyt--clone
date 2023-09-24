@@ -1,35 +1,19 @@
 
 import "./countryNews.css"
-import { EachCountryNewsData } from "../../assets/module";
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import Footer from "../footer/footer";
 import Header from "../header/header";
 import search_icon from "../../assets/images/searchicon.svg"
 import EachCountryNews from "../eachcountrynews/eachCountryNews";
+import { EachCountryNewsFunction } from "../../network/network";
 
 
-function CountryNews() {
-    const { countryname }: any = useParams();
-    const [eachCountryNews, setEachCountryNews] = useState<EachCountryNewsData | null>(null);
-
-    useEffect(() => {
-        let eachCountryName = countryname.toLowerCase();
-        var requestOptions: any = {
-            method: 'GET',
-            redirect: 'follow'
-        };
-
-        fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=\"${eachCountryName}\"&api-key=oj5apZ1t8GGl3mvFF2mfYtddMrB9BAsM`, requestOptions)
-            .then(response => response.json())
-            .then(result => setEachCountryNews(result))
-            .catch(error => console.log('error', error));
-    }, []);
+const CountryNews:React.FC=()=>{
+    const { countryname }:any = useParams();    
+    const eachCountryNews= EachCountryNewsFunction(countryname)
 
     if (eachCountryNews) {
-    
-
         return (
             <div className="more-dispatches">
                 <div className='inner-app-div'>
@@ -50,9 +34,7 @@ function CountryNews() {
                         </div>
                         <EachCountryNews data={eachCountryNews}/>
                         <Footer />
-                    </section>
-               
-                
+                    </section>               
                 </div>
                
             </div>

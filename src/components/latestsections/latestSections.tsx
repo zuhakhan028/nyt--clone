@@ -3,11 +3,13 @@ import "./latestSections.css";
 import searchicon from "../../assets/images/searchicon.svg"
 import LatestSectionList from "../latestsectionlist/latestSecList";
 import { worldNewsModule } from "../../assets/module";
+
+
 interface LatestSectionsProps {
     worldnews:worldNewsModule | undefined
 }
 
-function LatestSections(props: LatestSectionsProps) {
+const LatestSections:React.FC<LatestSectionsProps>=(props)=>{
   const [activeSection, setActiveSection] = useState<string>("Latest");
 
   const handleSectionClick = (section: string) => {

@@ -34,7 +34,6 @@
 .search-icon {
     width: 16px;
     height: 16px;
-
 }
 
 .news-section {
@@ -48,8 +47,6 @@
 
 }
 
-
-
 .header-right-section {
     display: flex;
     margin-left: 19%;
@@ -60,7 +57,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 
 .logo-icon {
     width: 195px;
@@ -73,7 +69,6 @@
 }
 
 .subscription-button {
-    /* width: 155px; */
     height: 11px;
     background-color: rgb(var(--primaryGray));
     border: 1px solid rgb(var(--secondaryGray));
@@ -108,7 +103,7 @@
     height: 24px;
 }
 
-.drop_down_icon {
+.drop-down-icon {
     width: 9px;
     height: 5px;
     margin-left: 6px;
@@ -116,25 +111,16 @@
 }
 
 
-
-
-
-
-
-
 @media screen and (max-width:1280px) {
     .header {
         margin: 0;
         padding: 0px 20px;
         display: flex;
-
     }
-
 
 }
 
 @media screen and (max-width:1244px) {
-
     .header-middle-section {
         width: 40%;
     }
@@ -182,13 +168,11 @@
         display: none;
     }
 
-
     .inner-header-div {
         display: flex;
         width: 96vw;
         justify-content: left;
         padding: 20px;
-
     }
 
     .header-left-section {
@@ -199,8 +183,6 @@
         width: 225px;
         height: 30px;
         margin-top: 8px;
-
-
     }
 
     .profile-icon-img {
@@ -209,7 +191,6 @@
         display: inline-block;
         margin-top: 10px;
         cursor: pointer;
-
 
     }
 
@@ -240,13 +221,11 @@
         display: none;
     }
 
-
     .inner-header-div {
         display: flex;
         width: 96vw;
         justify-content: left;
         padding: 20px;
-
     }
 
     .header-left-section {
@@ -257,8 +236,6 @@
         width: 225px;
         height: 30px;
         margin-top: 8px;
-
-
     }
 
     .profile-icon-img {
@@ -267,8 +244,6 @@
         display: inline-block;
         margin-top: 10px;
         cursor: pointer;
-
-
     }
 
     .account-div {
@@ -283,8 +258,6 @@
 
 
 @media screen and (max-width:425px) {
-
-
     .inner-header-div {
         width: 420px;
         display: flex;
@@ -308,13 +281,10 @@
 
     .logo-div {
         display: inline-block;
-
     }
 
     .header-middle-section {
         margin: 0;
-
-
     }
 
     .logo-icon {

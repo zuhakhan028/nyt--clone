@@ -12,14 +12,18 @@ import CallToAction from "../calltoaction/callToAction";
 import place_holder_img from "../../assets/images/placeholder-image.png";
 import auth_1 from "../../assets/images/auth-1.png";
 
-function CountryArticle() {
+const CountryArticle: React.FC = () => {
   window.scroll(0, 0);
   const location = useLocation();
   const countryArticleNews = location.state.item;
   document.title = countryArticleNews.headline.main;
 
   if (!countryArticleNews) {
-    return null; 
+    return (
+      <div className="loading-div-page">
+      Loading The Most Relevant News
+      </div>
+    );
   }
 
   const headline = countryArticleNews.headline.main || "";
@@ -42,7 +46,6 @@ function CountryArticle() {
   return (
     <div className="each-article-main-div">
       <Header text={subsectionName.toUpperCase()} />
-
       <section className="each-article-section">
         <div className="each-article-top-div">
           <h1 className="article-title">{headline}</h1>
@@ -54,7 +57,7 @@ function CountryArticle() {
                 <div>
                   <LazyLoadImage
                     className="article-main-img"
-                    src={xlargeUrl ? xlargeUrl:place_holder_img}
+                    src={xlargeUrl ? xlargeUrl : place_holder_img}
                     alt={multimediaItem ? multimediaItem.caption : "img-not-availabe"}
                     placeholderSrc={place_holder_img}
                   />
@@ -75,8 +78,8 @@ function CountryArticle() {
                 <span className="article-formatted-date-span">{`Updated ${formatDateTime(pubDate)}`}</span>
               </div>
               <div className="article-paragraph-content">
-                {splitStringIntoParagraphs(articleBody, multimediaItem ? xlargeUrl:place_holder_img ,
-                 multimediaItem.legacy.xlarge.caption?multimediaItem.legacy.xlarge.caption:"caption-not-available")}
+                {splitStringIntoParagraphs(articleBody, multimediaItem ? xlargeUrl : place_holder_img,
+                  multimediaItem.legacy.xlarge.caption ? multimediaItem.legacy.xlarge.caption : "caption-not-available")}
               </div>
             </div>
             <CommentsButton />
@@ -86,10 +89,9 @@ function CountryArticle() {
           </div>
         </div>
         <div className="each-article-bottom-div">
-        <Footer />
+          <Footer />
         </div>
       </section>
-   
     </div>
   );
 }

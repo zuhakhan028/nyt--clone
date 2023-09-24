@@ -11,12 +11,8 @@ interface Pagination {
   numResults: number
 }
 
-
-
-
-function Pagination(props: Pagination) {
+const Pagination: React.FC<Pagination> = (props) => {
   return (
-
 
     <ol className="pagination-ol">
       {props.paginationData.map((item: any, index: any) => {
@@ -24,7 +20,7 @@ function Pagination(props: Pagination) {
           const isLastItem = index === props.numResults - 1;
           return (
             <li key={index}>
-              <div key={index+1} className={` ${isLastItem ? "last-list-item" : "latest-section-list"}`} >
+              <div key={index + 1} className={` ${isLastItem ? "last-list-item" : "latest-section-list"}`} >
                 <div className="formatted-date">
                   {formatDate(item.created_date)}
                 </div>
@@ -68,8 +64,6 @@ function Pagination(props: Pagination) {
                 </Link>
               </div>
               <div key={index} className={` ${isLastItem ? "last-list-item-425" : "latest-section-list-425"}`} >
-
-
                 <Link
                   to={`/article/${item.byline}`}
                   state={{ item }}
@@ -114,20 +108,14 @@ function Pagination(props: Pagination) {
           );
         }
 
-
         else {
           return (
-            <div>Loading Latest News</div>
+            <div className="loading-div-page">Loading Latest News</div>
           )
         }
       })}
-
     </ol>
-
-
-
   )
-
 }
 
 export default Pagination

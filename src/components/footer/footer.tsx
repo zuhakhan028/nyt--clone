@@ -6,7 +6,9 @@ import { footerLinksSection1 } from "../../assets/data";
 import { footerLinksSection2 } from "../../assets/data";
 import { footerLinksSection3 } from "../../assets/data";
 import { footerBottomLinks } from "../../assets/data";
-function Footer() {
+
+
+const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <header className="footer-header">
@@ -50,7 +52,6 @@ function Footer() {
                                 </ul>
                             </div>
                             <ul className="newsletter-div-ul">
-
                                 {
                                     footerLinksSection2.map((section, index) => {
                                         return (
@@ -65,7 +66,6 @@ function Footer() {
                         <div>
                             {
                                 <ul className="newsletter-div-ul">
-
                                     {
                                         footerLinksSection3.map((section, index) => {
                                             return (
@@ -81,15 +81,14 @@ function Footer() {
                     </div>
                 </div>
                 <ul className="copyright-div">
-                    
                     {footerBottomLinks.map((section, index) => {
                         return (
                             <li className="footer-copy-right-li" key={index}>
-                                 {section.text}
+                                {section.text}
                             </li>
                         )
                     })}
-                    
+
                 </ul>
             </div>
         </footer>

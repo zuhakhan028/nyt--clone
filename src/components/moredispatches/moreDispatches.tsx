@@ -10,7 +10,7 @@ import Footer from "../footer/footer";
 interface MoreDispatches{
 text:string
 }
-function MoreDispatches(props:MoreDispatches){
+const MoreDispatches:React.FC<MoreDispatches>=(props)=>{
 
 
     let title=props.text;
@@ -29,7 +29,7 @@ function MoreDispatches(props:MoreDispatches){
             url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q="${props.text.toLowerCase()}"&api-key=oj5apZ1t8GGl3mvFF2mfYtddMrB9BAsM`;
         }
     
-        var requestOptions: any = {
+        let requestOptions: any = {
             method: 'GET',
             redirect: 'follow'
         };
@@ -61,13 +61,10 @@ function MoreDispatches(props:MoreDispatches){
                             <div className="share-outer-div">
                                 <a><img src={search_icon} className="share-img" alt={"share-img"}></img></a>
                             </div>
-                        </div>
-                        
+                        </div>                        
                         <LatestSections worldnews={worldNewsResult}/>
-                        <Footer/>
-    
-                    </section>
-            
+                        <Footer/>    
+                    </section>            
                 </div>
             </div>
         )

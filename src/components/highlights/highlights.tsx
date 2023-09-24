@@ -14,7 +14,7 @@ interface highlightsData {
 }
 
 
-function Highlights(props: highlightsData) {
+const Highlights:React.FC<highlightsData>=(props)=> {
     if (!props.worldnews) {
         return (
             <div className="loading-div-page">
@@ -26,9 +26,8 @@ function Highlights(props: highlightsData) {
     const consecutiveHeadlines = [];
     let consecutiveCount = 0;
 
-
-    for (let i = 0; i < props.worldnews.results.length; i++) {
-        const result = props.worldnews.results[i];
+    for (let newsCount = 0; newsCount < props.worldnews.results.length; newsCount++) {
+        const result = props.worldnews.results[newsCount];
 
         if (
             result.title &&
@@ -263,7 +262,6 @@ function Highlights(props: highlightsData) {
                                     state={consecutiveHeadlines[2]}
                                 >
                                     <article className="highlight-article">
-
                                         <div>
                                             <h3 className="hightlights-title">
                                                 {consecutiveHeadlines[2].title}
@@ -304,13 +302,9 @@ function Highlights(props: highlightsData) {
                                     </article>
                                 </Link>
                             </div>
-
-
-
                         </ol>
                     </ol>
                 </div>
-
             </section>
         );
     } else {

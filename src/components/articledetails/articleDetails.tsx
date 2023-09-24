@@ -3,9 +3,6 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../header/header";
 import "./articleDetails.css"
-import gift_icon from "../../assets/images/gift.svg"
-import share_icon from "../../assets/images/share.svg"
-import save_icon from "../../assets/images/save.svg"
 import { formatDate } from "../formatDate";
 import { formatDateTime } from "../formatDateandTime";
 import Footer from "../footer/footer";
@@ -15,33 +12,24 @@ import { articleBody } from "../../assets/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import place_holder_img from "../..//assets/images/placeholder-image.png"
 import splitStringIntoParagraphs from "../splitparagraph";
-import { useState, useEffect } from "react";
-import { EachCountryNewsData } from "../../assets/module";
 import CallToAction from "../calltoaction/callToAction";
 
-
-
-
-
-
-function ArticleDetail() {
-    window.scrollTo(0, 0); 
+const ArticleDetail: React.FC = () => {
+    window.scrollTo(0, 0);
     const location = useLocation();
-    const worldnews = location.state ? (location.state.item ? location.state.item : location.state) : null;    
+    const worldnews = location.state ? (location.state.item ? location.state.item : location.state) : null;
     document.title = worldnews.title
 
-const metaDescription = document.querySelector('meta[name="news"]');
+    const metaDescription = document.querySelector('meta[name="news"]');
 
 
-if (metaDescription) {
-  metaDescription.setAttribute("content", worldnews.title);
-}
-    
+    if (metaDescription) {
+        metaDescription.setAttribute("content", worldnews.title);
+    }
 
     return (
         <div className="each-article-main-div">
             <Header text={`${worldnews.subsection.toUpperCase()}`} />
-
             <section className="each-article-section">
                 <div className="each-article-top-div">
                     <h1 className="article-title">
@@ -51,7 +39,7 @@ if (metaDescription) {
                         {worldnews.abstract}
                     </p>
                     <div className="article-top-div">
-                        <CallToAction/>
+                        <CallToAction />
                         <div className="article-middle-div">
                             <figure className="article-figure">
                                 <div>
@@ -63,35 +51,25 @@ if (metaDescription) {
                                 </figcaption>
 
                             </figure>
-                            <div className="article-byline"> <img src={auth_1} className="auth-img"></img>By<span className="article-byline-span">{` ${ worldnews.byline.slice(3)}`}</span></div>
+                            <div className="article-byline"> <img src={auth_1} className="auth-img"></img>By<span className="article-byline-span">{` ${worldnews.byline.slice(3)}`}</span></div>
                             <div className="article-formatted-date">
                                 {formatDate(worldnews.created_date)}
                                 <span className="article-formatted-date-span">{`Updated ${formatDateTime(worldnews.updated_date)}`}</span></div>
 
                             <div className="article-paragraph-content">
-                                {splitStringIntoParagraphs(articleBody, worldnews.multimedia[1].url,worldnews.multimedia[1].caption)}
+                                {splitStringIntoParagraphs(articleBody, worldnews.multimedia[1].url, worldnews.multimedia[1].caption)}
                             </div>
-
                         </div>
                         <CommentsButton />
                         <div className="article-end-cta-div">
-                            <CallToAction/>
+                            <CallToAction />
                         </div>
-
                     </div>
-                  
                 </div>
                 <div className="each-article-bottom-div">
-                <Footer /> 
+                    <Footer />
                 </div>
-
-            
             </section>
-
-
- 
-
-                
         </div>
     );
 }

@@ -1,20 +1,23 @@
-.latest-section-each-country{
+.latest-section-each-country {
     width: 100%;
     margin-top: 35px;
 }
-.each-country-ul{
+
+.each-country-ul {
     width: 70%;
-   margin-top: 30px;
+    margin-top: 30px;
     padding-left: 0;
 }
 
-.last-list-item-425{
-    display: none;
-} 
-.latest-section-list-425{
+.last-list-item-425 {
     display: none;
 }
-.each-country-news-page-li{
+
+.latest-section-list-425 {
+    display: none;
+}
+
+.each-country-news-page-li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -26,6 +29,7 @@
     border-bottom: 1px solid var(--color-stroke-quaternary, #DFDFDF);
     padding-bottom: 20px;
 }
+
 .last-list-item-each-country {
     border-bottom: 0;
     display: flex;
@@ -34,25 +38,26 @@
 }
 
 @media screen and (max-width:425px) {
-    .latest-section-list-each-country{
+    .latest-section-list-each-country {
         display: none;
-        
-    }
-    .latest-section-list-425{
-      display: flex;
-      margin-bottom: 20px;
-      border-bottom: 1px solid var(--color-stroke-quaternary, #DFDFDF);
-      padding-bottom: 20px;
-      width: 400px;
     }
 
-    .each-country-ul{
-        width: 70%;
-        padding-left:0px
+    .latest-section-list-425 {
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--color-stroke-quaternary, #DFDFDF);
+        padding-bottom: 20px;
+        width: 400px;
     }
-  .last-list-item-each-country{
-    display: none;
-  }
-  
-    
+
+    .each-country-ul {
+        width: 70%;
+        padding-left: 0px
+    }
+
+    .last-list-item-each-country {
+        display: none;
+    }
+
+
 }

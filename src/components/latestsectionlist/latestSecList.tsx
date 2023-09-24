@@ -9,12 +9,14 @@ import place_holder_img from "../../assets/images/placeholder-image.png"
 import { useState } from "react"
 import Pagination from "../pagination/pagination";
 import more_icon from "../../assets/images/more.svg"
+
+
 interface LatestSectionListProps {
   index: number;
   worldnews: worldNewsModule | undefined;
 }
 
-function LatestSectionList(props: LatestSectionListProps) {
+const LatestSectionList: React.FC<LatestSectionListProps> = (props) => {
 
   const [paginationMoreClicked, SetpaginationMoreClicked] = useState(false)
   if (props.index === 1) {
@@ -22,8 +24,6 @@ function LatestSectionList(props: LatestSectionListProps) {
       const numResults = props.worldnews.num_results;
       const paginationchunk1 = props.worldnews.results.slice(0, props.worldnews.results.length / 2);
       const paginationchunk2 = props.worldnews.results.slice(props.worldnews.results.length / 2, props.worldnews.results.length);
-
-
 
       return (
         <section>
@@ -33,7 +33,6 @@ function LatestSectionList(props: LatestSectionListProps) {
               <option>oldest</option>
             </select>
           </label>
-
           <section className="latest-section-list-section">
             <div className="latest-section-left-div">
               <ol className="latest-section-ordered-list">
@@ -43,7 +42,6 @@ function LatestSectionList(props: LatestSectionListProps) {
                     return (
                       <li key={index} className={` ${isLastItem ? "last-list-item" : "latest-section-list"}`}
                       >
-
                         <div className="formatted-date">
                           {formatDate(item.created_date)}
                         </div>
@@ -76,7 +74,6 @@ function LatestSectionList(props: LatestSectionListProps) {
                                         src={place_holder_img}
                                         alt={"img-not-avalaible"}
                                         className="latest-list-section-img"
-
                                       />
                                     )}
                                   </div>
@@ -87,21 +84,21 @@ function LatestSectionList(props: LatestSectionListProps) {
                         </Link>
                       </li>
                     );
-                  } else {
+                  }
+                  else {
                     return null;
                   }
-                })}
+                })
+                }
+
                 <li onClick={() => { SetpaginationMoreClicked(true) }} className={paginationMoreClicked ? "pagination-more-clicked" : "pagination-more-not-clicked"}>
                   More Latest News <span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
                 </li>
-
                 {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults} />}
-
               </ol>
 
 
-
-
+              {/* code for responsiveness */}
               <ol className="latest-section-ordered-list-425">
                 {paginationchunk1.map((item, index) => {
                   if (item.title) {
@@ -109,8 +106,6 @@ function LatestSectionList(props: LatestSectionListProps) {
                     return (
                       <li key={index} className={` ${isLastItem ? "last-list-item" : "latest-section-list"}`}
                       >
-
-                       
                         <Link
                           to={`/article/${item.byline}`}
                           state={{ item }}
@@ -140,7 +135,6 @@ function LatestSectionList(props: LatestSectionListProps) {
                                         src={place_holder_img}
                                         alt={"img-not-avalaible"}
                                         className="latest-list-section-img"
-
                                       />
                                     )}
                                   </div>
@@ -158,36 +152,28 @@ function LatestSectionList(props: LatestSectionListProps) {
                 <li onClick={() => { SetpaginationMoreClicked(true) }} className={paginationMoreClicked ? "pagination-more-clicked" : "pagination-more-not-clicked"}>
                   More Latest News <span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
                 </li>
-
                 {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults} />}
-
               </ol>
-              
-           
-
             </div>
-
-
           </section>
         </section>
       );
-    } else {
+    }
+    else {
       return (
         <div>
           Loading
         </div>
       )
     }
-
-  } else {
+  }
+  else {
     if (props.worldnews) {
-
 
       const paginationchunk1 = props.worldnews.results.slice(0, props.worldnews.results.length / 2);
       const paginationchunk2 = props.worldnews.results.slice(props.worldnews.results.length / 2, props.worldnews.results.length);
       const numResults = props.worldnews.num_results;
       return (
-
         <section className="latest-section-list-section">
           <div className="latest-section-left-div">
             <ol className="latest-section-ordered-list">
@@ -195,25 +181,19 @@ function LatestSectionList(props: LatestSectionListProps) {
                 if (item.title) {
                   const isLastItem = index === numResults - 1;
                   return (
-
                     <li key={index} className={` ${isLastItem ? "last-list-item" : "latest-section-list"}`}
                     >
-
                       <div className="formatted-date">
                         {formatDate(item.created_date)}
                       </div>
                       <Link
                         to={`/article/${item.byline}`}
-
                         state={{ item }}
                         key={index}
                         className="route-next-page">
                         <article className="article-latest-section-list">
                           <div className="article-latest-section-inner-div">
-
                             <h3 className="dispatch-title-h3">{item.title}</h3>
-
-
                             <p className="latest-list-section-abstract">{item.abstract}</p>
                             <div className="byline-span-author">{formatNames(item.byline)}</div>
                           </div>
@@ -252,70 +232,66 @@ function LatestSectionList(props: LatestSectionListProps) {
               })}
               <li onClick={() => { SetpaginationMoreClicked(true) }} className={paginationMoreClicked ? "pagination-more-clicked" : "pagination-more-not-clicked"}>
                 More Latest News<span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
-              </li>    
-              {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults} />}       
+              </li>
+              {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults} />}
             </ol>
+            {/* code for responsiveness */}
             <ol className="latest-section-ordered-list-425">
-                {paginationchunk1.map((item, index) => {
-                  if (item.title) {
-                    const isLastItem = index === numResults - 1;
-                    return (
-                      <li key={index} className={` ${isLastItem ? "last-list-item" : "latest-section-list"}`}
-                      >
-
-                       
-                        <Link
-                          to={`/article/${item.byline}`}
-                          state={{ item }}
-                          key={index}
-                          className="route-next-page">
-                          <article className="article-latest-section-list">
-                            <div className="article-latest-section-inner-div">
-                              <h3 className="dispatch-title-h3">{item.title}</h3>
-                              <p className="latest-list-section-abstract">{item.abstract}</p>
-                              <div className="byline-span-author">{formatNames(item.byline)}</div>
-                            </div>
-                            <div>
-                              <figure className="latest-list-section-figure">
+              {paginationchunk1.map((item, index) => {
+                if (item.title) {
+                  const isLastItem = index === numResults - 1;
+                  return (
+                    <li key={index} className={` ${isLastItem ? "last-list-item" : "latest-section-list"}`}
+                    >
+                      <Link
+                        to={`/article/${item.byline}`}
+                        state={{ item }}
+                        key={index}
+                        className="route-next-page">
+                        <article className="article-latest-section-list">
+                          <div className="article-latest-section-inner-div">
+                            <h3 className="dispatch-title-h3">{item.title}</h3>
+                            <p className="latest-list-section-abstract">{item.abstract}</p>
+                            <div className="byline-span-author">{formatNames(item.byline)}</div>
+                          </div>
+                          <div>
+                            <figure className="latest-list-section-figure">
+                              <div>
                                 <div>
-                                  <div>
-                                    {item.multimedia && item.multimedia[1] ? (
-                                      <div>
-                                        <LazyLoadImage
-                                          src={item.multimedia[1].url}
-                                          alt={item.multimedia[1].caption}
-                                          className="latest-list-section-img"
-                                          placeholderSrc={place_holder_img}
-                                        />
-                                      </div>
-                                    ) : (
+                                  {item.multimedia && item.multimedia[1] ? (
+                                    <div>
                                       <LazyLoadImage
-                                        src={place_holder_img}
-                                        alt={"img-not-avalaible"}
+                                        src={item.multimedia[1].url}
+                                        alt={item.multimedia[1].caption}
                                         className="latest-list-section-img"
-
+                                        placeholderSrc={place_holder_img}
                                       />
-                                    )}
-                                  </div>
+                                    </div>
+                                  ) : (
+                                    <LazyLoadImage
+                                      src={place_holder_img}
+                                      alt={"img-not-avalaible"}
+                                      className="latest-list-section-img"
+
+                                    />
+                                  )}
                                 </div>
-                              </figure>
-                            </div>
-                          </article>
-                        </Link>
-                      </li>
-                    );
-                  } else {
-                    return null;
-                  }
-                })}
-                <li onClick={() => { SetpaginationMoreClicked(true) }} className={paginationMoreClicked ? "pagination-more-clicked" : "pagination-more-not-clicked"}>
-                  More Latest News <span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
-                </li>
-
-                {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults} />}
-
-              </ol>
-       
+                              </div>
+                            </figure>
+                          </div>
+                        </article>
+                      </Link>
+                    </li>
+                  );
+                } else {
+                  return null;
+                }
+              })}
+              <li onClick={() => { SetpaginationMoreClicked(true) }} className={paginationMoreClicked ? "pagination-more-clicked" : "pagination-more-not-clicked"}>
+                More Latest News <span><img src={more_icon} className="more-icon" alt="more_icon"></img></span>
+              </li>
+              {paginationMoreClicked && <Pagination paginationData={paginationchunk2} numResults={numResults} />}
+            </ol>
           </div>
         </section>
       );

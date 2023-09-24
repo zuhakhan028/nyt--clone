@@ -1,65 +1,65 @@
-.more-dispatch-section{
-     width: 1200px;
+.more-dispatch-section {
+    width: 1200px;
     display: flex;
     background-color: green;
     justify-content: center;
-   
 }
-.more-dispatches{
+
+.more-dispatches {
     width: 99.99%;
 }
 
-.middle-section{
+.middle-section {
     width: 1200px;
-}    
-.news-section-dispatches{
+}
+
+.news-section-dispatches {
     font-size: 12px;
     font-weight: 700;
     line-height: 19px;
     margin-left: 0px;
     padding-top: 8px;
     margin-top: 15px;
-    font-family:"karnak-medium",'Libre-Franklin',serif;
+    font-family: "karnak-medium", 'Libre-Franklin', serif;
     letter-spacing: 1px;
 }
 
-.news-section-h1{
+.news-section-h1 {
     margin: 5px 0;
-    font-family: 'KarnakFont','Noto Serif Georgian', 'Libre-Franklin',serif;
+    font-family: 'KarnakFont', 'Noto Serif Georgian', 'Libre-Franklin', serif;
     font-size: 36px;
-   
 }
-.news-section-dispatches-inner-div{
+
+.news-section-dispatches-inner-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 7px;
 }
-.share-outer-div{
+
+.share-outer-div {
     border-radius: 50%;
-    border: 1px solid var(--color-stroke-quaternary,#DFDFDF);
+    border: 1px solid var(--color-stroke-quaternary, #DFDFDF);
     padding: 6px;
     cursor: pointer;
-    
 }
 
-.share-img{
+.share-img {
     height: 16px;
     width: 20px;
 }
 
-.tagline-more-disptches{
-    color: var(--color-content-quaternary,#7272);
+.tagline-more-disptches {
+    color: var(--color-content-quaternary, #7272);
     letter-spacing: 0.17px;
     font-size: 16px;
     font-weight: 400;
-    font-family: "cheltanham-std",'Libre-Franklin',serif;
+    font-family: "cheltanham-std", 'Libre-Franklin', serif;
     margin-top: 14px;
     margin-bottom: 0;
-
 }
 
-.more-dispatches-loading-page{
+.more-dispatches-loading-page {
     width: 98vw;
     height: 99vw;
     display: flex;
@@ -67,8 +67,8 @@
     align-items: center;
 }
 
-.middle-section-dipatches{
-width: 1200px;
+.middle-section-dipatches {
+    width: 1200px;
 }
 
 @media screen and (max-width:425px) {

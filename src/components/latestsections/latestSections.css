@@ -1,7 +1,6 @@
 .latest-section {
     margin-top: 35px;
     border-bottom: 2px solid var(--color-stroke-quaternary, #DFDFDF);
-
 }
 
 .latest-section-ul {
@@ -17,7 +16,6 @@
 }
 
 .latest-section-li {
-
     border: 1px solid transparent;
     font-size: 17px;
     line-height: 23px;
@@ -26,8 +24,6 @@
     position: relative;
     height: 40px;
     width: 136px;
-
-
 }
 
 .latest-section-not-clicked {
@@ -41,7 +37,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .clicked-section {
@@ -51,7 +46,6 @@
 
 .latest-section-clicked {
     display: flex;
-
     align-items: center;
     justify-content: center;
     min-width: 136px;
@@ -62,13 +56,10 @@
     border-top-right-radius: 3px;
     transform: translateY(-12.5px);
     height: 51px;
-
     font-size: 17px;
     font-weight: 700;
     color: black;
     position: absolute;
-
-
 }
 
 .latest-section-clicked-again {
@@ -102,13 +93,11 @@
 @media screen and (max-width:1000px) {
     .latest-section-ul {
         width: 90vw;
-        /* padding-left: 180px; */
     }
 }
 
 @media screen and (max-width:425px) {
     .latest-section-ul {
         width: 89vw;
-        /* padding-left: 180px; */
     }
 }

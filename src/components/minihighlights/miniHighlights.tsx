@@ -12,7 +12,7 @@ interface MiniHighlightsProps {
   endIndex: number;
 }
 
-function MiniHighlights(props: MiniHighlightsProps) {
+const MiniHighlights:React.FC<MiniHighlightsProps>=(props)=>{
   let slicedResults: listWorldNews[] = [];
 
   if (props.worldnews) {
@@ -63,7 +63,7 @@ function MiniHighlights(props: MiniHighlightsProps) {
               </div>
 
 
-
+             {/* code for responsiveness */}
 
               <div
                 key={`${index}-700`}
@@ -91,7 +91,6 @@ function MiniHighlights(props: MiniHighlightsProps) {
                         <span className="byline-span">
                           {`${getTimeAgo(item.created_date)} .`}
                         </span>
-
                         <span
                           className={`byline-span-author`}
                         >

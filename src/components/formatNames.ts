@@ -1,11 +1,6 @@
 export function formatNames(inputString: string): string {
- 
- 
     const words = inputString.split(' ');
-
-   
     const modifiedWords = [];
-
     for (const word of words) {
         if (word.toLowerCase() === 'and') {
             modifiedWords.push('and');
@@ -17,7 +12,6 @@ export function formatNames(inputString: string): string {
     }
 
     const resultString = modifiedWords.join(' ');
-
     return resultString;
 }
 

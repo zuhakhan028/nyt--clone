@@ -1,11 +1,11 @@
 .headlines {
     font-size: 44px;
-    font-family: 'KarnakFont', 'Noto Serif Georgian', 'Libre-Franklin',serif;
+    font-family: 'KarnakFont', 'Noto Serif Georgian', 'Libre-Franklin', serif;
     font-weight: 900;
     margin: 0;
     padding: 0;
-    line-height: 1; 
-    box-sizing: content-box; 
+    line-height: 1;
+    box-sizing: content-box;
 }
 
 .countries-list {
@@ -20,24 +20,24 @@
 }
 
 
-.countries-navbar{
+.countries-navbar {
     margin-top: 10px;
 }
 
 
-@media screen and (max-width:700px){
-    .headlines{
+@media screen and (max-width:700px) {
+    .headlines {
         font-size: 32px;
     }
 }
 
-@media screen and (max-width:425px){
-    .countries-navbar{
+@media screen and (max-width:425px) {
+    .countries-navbar {
         display: inline;
     }
 
-    .headlines{
+    .headlines {
         margin-bottom: 20px;
     }
-   
+
 }
