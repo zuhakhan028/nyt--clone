@@ -55,26 +55,31 @@ code {
 @font-face {
   font-family: "KarnakFont";
   src: url("./assets/fonts/KARNAKPRO-BLACK.OTF");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "karnak-medium";
   src: url("./assets/fonts/KARNAKPRO-MEDIUM.TTF");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "cheltenham-italic-light";
   src: url("assets/fonts/CHELTENHAMSTDLIGHTITALIC.OTF");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "cheltanham-std";
-  src: url("assets/fonts/CHELTENHAMSTDBOOK.OTF")
+  src: url("assets/fonts/CHELTENHAMSTDBOOK.OTF");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "cheltanham-italic";
-  src: url("assets/fonts/CHELTENHAMSTDLIGHTITALIC.OTF")
+  src: url("assets/fonts/CHELTENHAMSTDLIGHTITALIC.OTF");
+  font-display: swap;
 }
 
 
@@ -86,21 +91,25 @@ code {
 @font-face {
   font-family: "custom-times-new-roman-regular";
   src: url("./assets/fonts/TIMES.TTF");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "custom-times-new-roman-bold";
   src: url("./assets/fonts/TIMESBD.TTF");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "franklin-regular";
   src: url("./assets/fonts/FRADM.TTF");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "franklin-regular-gothic";
   src: url("./assets/fonts/FRABK.TTF");
+  font-display: swap;
 }
 
 
