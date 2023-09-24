@@ -224,7 +224,8 @@ const EachCountryNews: React.FC<eachCountryNews> = (props) => {
                                     )}
                                 </div>
 
-                            </div> : <div className="loading-div-page">
+                            </div> 
+                            : <div className="loading-div-page">
                                 Loading The Most Relevant News For You 
                                 </div>}
                         </ol>

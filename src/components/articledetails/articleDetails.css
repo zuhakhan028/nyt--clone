@@ -13,7 +13,7 @@
 .each-article-bottom-div{
     width: 1180px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .each-article-main-div{
@@ -165,11 +165,7 @@
     margin: 24px 0px;
 }
 
-.more-in-continent-div{
-   border-top: 2px solid black;
-   width: 855px;
-   margin-right: 20px;
-}
+
 
 .trending-nyt-div{
     border-top: 2px solid black; 

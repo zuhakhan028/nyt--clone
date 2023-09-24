@@ -4,13 +4,20 @@
     background-color: rgb(86, 123, 149);
     border: 1px solid rgb(50, 104, 145);
     border-radius: 3px;
-    color: white;
+
     display: block;
-    font-size: 13px;
-    font-weight: 600;
+   
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 
+}
+
+.comment-button-link{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
 }

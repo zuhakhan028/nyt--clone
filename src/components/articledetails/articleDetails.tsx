@@ -13,6 +13,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import place_holder_img from "../..//assets/images/placeholder-image.png"
 import splitStringIntoParagraphs from "../splitparagraph";
 import CallToAction from "../calltoaction/callToAction";
+import ArticleSuggestions from "../articlesuggestions/articleSuggestions";
+
 
 const ArticleDetail: React.FC = () => {
     window.scrollTo(0, 0);
@@ -60,13 +62,17 @@ const ArticleDetail: React.FC = () => {
                                 {splitStringIntoParagraphs(articleBody, worldnews.multimedia[1].url, worldnews.multimedia[1].caption)}
                             </div>
                         </div>
-                        <CommentsButton />
+                        <CommentsButton link={worldnews.url?worldnews.url:""}/>
                         <div className="article-end-cta-div">
                             <CallToAction />
                         </div>
                     </div>
                 </div>
                 <div className="each-article-bottom-div">
+                    <div>
+                    <ArticleSuggestions countryname={worldnews.subsection}/>
+                    </div>
+                 
                     <Footer />
                 </div>
             </section>

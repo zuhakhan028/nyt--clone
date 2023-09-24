@@ -1,0 +1,48 @@
+.article-suggestion-img{
+    width: 274px;
+    height: 182px;
+}
+.each-country-suggestion-div{
+    width: 270px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.more-in-continent-div{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid black;
+    width: 870px;
+    margin-right: 20px;
+ }
+.more-in-continent-inner-div{
+    display: flex;
+    flex-wrap: wrap;  
+}
+.each-country-suggestion-title{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "cheltanham-std", 'Libre-Franklin', serif;
+    margin:0px;
+    margin-bottom: 5px;
+}
+
+.fig-div-article-suggestions{
+margin-bottom: 5px;
+margin-left: 0px;
+width: 100%;
+}
+.country-suggestion-header{
+    cursor: pointer;
+    display: flex;
+    font-family: "franklin-regular","Libre-Franklin",serif;
+    font-size: 14px;
+    font-weight: 800;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 7px;
+
+}
