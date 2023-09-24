@@ -6,7 +6,7 @@ interface commentsButton {
 const CommentsButton: React.FC<commentsButton> = (props) => {
     return (
         <div>
-               <a href={props.link} className="comment-button-link">
+               <a href={props.link?props.link:"/"} className="comment-button-link">
         <div className="comment-button">
          
               

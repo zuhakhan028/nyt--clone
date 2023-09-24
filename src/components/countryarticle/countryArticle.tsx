@@ -82,7 +82,7 @@ const CountryArticle: React.FC = () => {
                   multimediaItem.legacy.xlarge.caption ? multimediaItem.legacy.xlarge.caption : "caption-not-available")}
               </div>
             </div>
-            <CommentsButton link={multimediaItem.url?multimediaItem.url:""}/>
+            <CommentsButton link={countryArticleNews.url}/>
             <div className="article-end-cta-div">
               <CallToAction />
             </div>

@@ -45,6 +45,7 @@
 
 .mini-highlight-inner-div {
     width: 207px;
+    min-height: 250px;
     padding: 0 20px 0 20px;
     border-right: 1px solid var(--color-stroke-quaternary);
 
