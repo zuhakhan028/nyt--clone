@@ -13,7 +13,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import place_holder_img from "../..//assets/images/placeholder-image.png"
 import splitStringIntoParagraphs from "../splitparagraph";
 import CallToAction from "../calltoaction/callToAction";
-import ArticleSuggestions from "../articlesuggestions/articleSuggestions";
+
 
 
 const ArticleDetail: React.FC = () => {
@@ -68,11 +68,7 @@ const ArticleDetail: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="each-article-bottom-div">
-                    <div>
-                    <ArticleSuggestions countryname={worldnews.subsection}/>
-                    </div>
-                 
+                <div className="each-article-bottom-div">                 
                     <Footer />
                 </div>
             </section>
